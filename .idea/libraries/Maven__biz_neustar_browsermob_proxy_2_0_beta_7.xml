@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: biz.neustar:browsermob-proxy:2.0-beta-7">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/biz/neustar/browsermob-proxy/2.0-beta-7/browsermob-proxy-2.0-beta-7.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/biz/neustar/browsermob-proxy/2.0-beta-7/browsermob-proxy-2.0-beta-7-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/biz/neustar/browsermob-proxy/2.0-beta-7/browsermob-proxy-2.0-beta-7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
