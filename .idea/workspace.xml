@@ -2,54 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="733e1410-240c-4a15-a603-a782fd55c233" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/sayem/webdriver/basic/App.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/sayem/Saucelabs/Module1.java" afterPath="$PROJECT_DIR$/src/main/java/com/sayem/webdriver/advanced/Saucelabs/Module1.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/sayem/Screenshot/Screenshot.java" afterPath="$PROJECT_DIR$/src/main/java/com/sayem/webdriver/advanced/Screenshot/Screenshot.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/sayem/database/Create_new_Lead.java" afterPath="$PROJECT_DIR$/src/main/java/com/sayem/webdriver/advanced/database/Create_new_Lead.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/sayem/database/Database_connection.java" afterPath="$PROJECT_DIR$/src/main/java/com/sayem/webdriver/advanced/database/Database_connection.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/sayem/database/DropList_Test.java" afterPath="$PROJECT_DIR$/src/main/java/com/sayem/webdriver/advanced/database/DropList_Test.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/sayem/database/LoginTest.java" afterPath="$PROJECT_DIR$/src/main/java/com/sayem/webdriver/advanced/database/LoginTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/sayem/logging/Logging_Example.java" afterPath="$PROJECT_DIR$/src/main/java/com/sayem/webdriver/advanced/logging/Logging_Example.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/sayem/module11/FireFox_Profile_Loading.java" afterPath="$PROJECT_DIR$/src/main/java/com/sayem/webdriver/advanced/module11/FireFox_Profile_Loading.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/sayem/module11/HTMLUNIT_EXAMPLE.java" afterPath="$PROJECT_DIR$/src/main/java/com/sayem/webdriver/advanced/module11/HTMLUNIT_EXAMPLE.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/sayem/module11/WebDriver_Test.java" afterPath="$PROJECT_DIR$/src/main/java/com/sayem/webdriver/advanced/module11/WebDriver_Test.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/sayem/module12/Identifying_Elements.java" afterPath="$PROJECT_DIR$/src/main/java/com/sayem/webdriver/advanced/module12/Identifying_Elements.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/sayem/module12/RadioButtons.java" afterPath="$PROJECT_DIR$/src/main/java/com/sayem/webdriver/advanced/module12/RadioButtons.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/sayem/module12/Selenium_Basics.java" afterPath="$PROJECT_DIR$/src/main/java/com/sayem/webdriver/advanced/module12/Selenium_Basics.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/sayem/module12/WebList.java" afterPath="$PROJECT_DIR$/src/main/java/com/sayem/webdriver/advanced/module12/WebList.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/sayem/module13/Links_Extract.java" afterPath="$PROJECT_DIR$/src/main/java/com/sayem/webdriver/advanced/module13/Links_Extract.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/sayem/module13/Sets.java" afterPath="$PROJECT_DIR$/src/main/java/com/sayem/webdriver/advanced/module13/Sets.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/sayem/module13/TabsAndPopups.java" afterPath="$PROJECT_DIR$/src/main/java/com/sayem/webdriver/advanced/module13/TabsAndPopups.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/sayem/module14/alerts/HandlingAlert.java" afterPath="$PROJECT_DIR$/src/main/java/com/sayem/webdriver/advanced/module14/alerts/HandlingAlert.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/sayem/module14/simulatingkeys/Keys_ex.java" afterPath="$PROJECT_DIR$/src/main/java/com/sayem/webdriver/advanced/module14/simulatingkeys/Keys_ex.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/sayem/module14/wait/IntroducingWait.java" afterPath="$PROJECT_DIR$/src/main/java/com/sayem/webdriver/advanced/module14/wait/IntroducingWait.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/sayem/module14/wait/VisibilityOfElementLocated.java" afterPath="$PROJECT_DIR$/src/main/java/com/sayem/webdriver/advanced/module14/wait/VisibilityOfElementLocated.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/sayem/module15/Ajax_Auto_suggest.java" afterPath="$PROJECT_DIR$/src/main/java/com/sayem/webdriver/advanced/module15/Ajax_Auto_suggest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/sayem/module15/Calender.java" afterPath="$PROJECT_DIR$/src/main/java/com/sayem/webdriver/advanced/module15/Calender.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/sayem/module15/Photo_Update.java" afterPath="$PROJECT_DIR$/src/main/java/com/sayem/webdriver/advanced/module15/Photo_Update.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/sayem/module15/WebTable_Handling.java" afterPath="$PROJECT_DIR$/src/main/java/com/sayem/webdriver/advanced/module15/WebTable_Handling.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/sayem/module16/Downloading_File.java" afterPath="$PROJECT_DIR$/src/main/java/com/sayem/webdriver/advanced/module16/Downloading_File.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/sayem/module16/Fron_and_Back_Button.java" afterPath="$PROJECT_DIR$/src/main/java/com/sayem/webdriver/advanced/module16/Fron_and_Back_Button.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/sayem/module16/ListenerTest.java" afterPath="$PROJECT_DIR$/src/main/java/com/sayem/webdriver/advanced/module16/ListenerTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/sayem/module16/MouseMovement.java" afterPath="$PROJECT_DIR$/src/main/java/com/sayem/webdriver/advanced/module16/MouseMovement.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/sayem/module16/MyListener.java" afterPath="$PROJECT_DIR$/src/main/java/com/sayem/webdriver/advanced/module16/MyListener.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/sayem/module17/AmericanGolf.java" afterPath="$PROJECT_DIR$/src/main/java/com/sayem/webdriver/advanced/module17/AmericanGolf.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/sayem/module17/Amway.java" afterPath="$PROJECT_DIR$/src/main/java/com/sayem/webdriver/advanced/module17/Amway.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/sayem/module17/GmailNumber.java" afterPath="$PROJECT_DIR$/src/main/java/com/sayem/webdriver/advanced/module17/GmailNumber.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/sayem/module17/Google_Pagination.java" afterPath="$PROJECT_DIR$/src/main/java/com/sayem/webdriver/advanced/module17/Google_Pagination.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/sayem/module17/QuikrTest.java" afterPath="$PROJECT_DIR$/src/main/java/com/sayem/webdriver/advanced/module17/QuikrTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/sayem/module17/Quikr_Better_Way.java" afterPath="$PROJECT_DIR$/src/main/java/com/sayem/webdriver/advanced/module17/Quikr_Better_Way.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/sayem/module17/Scrolling_Bar.java" afterPath="$PROJECT_DIR$/src/main/java/com/sayem/webdriver/advanced/module17/Scrolling_Bar.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/sayem/mousehover/Mouse_Hover.java" afterPath="$PROJECT_DIR$/src/main/java/com/sayem/webdriver/advanced/mousehover/Mouse_Hover.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/sayem/mousehover/MyListener.java" afterPath="$PROJECT_DIR$/src/main/java/com/sayem/webdriver/advanced/mousehover/MyListener.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/sayem/readandwritetextfiles/Creating_Reading_Writing_Text_Files.java" afterPath="$PROJECT_DIR$/src/main/java/com/sayem/webdriver/advanced/readandwritetextfiles/Creating_Reading_Writing_Text_Files.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/sayem/readingproperties/Reading_Properties.java" afterPath="$PROJECT_DIR$/src/main/java/com/sayem/webdriver/advanced/readingproperties/Reading_Properties.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/sayem/windowhandler/TabsAndPopups.java" afterPath="$PROJECT_DIR$/src/main/java/com/sayem/webdriver/advanced/windowhandler/TabsAndPopups.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="WebDriver.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="733e1410-240c-4a15-a603-a782fd55c233" time="1376066601066" ignored="false" />
+    <file path="/Dummy.txt" changelist="733e1410-240c-4a15-a603-a782fd55c233" time="1376066950534" ignored="false" />
     <file path="/App.java" changelist="733e1410-240c-4a15-a603-a782fd55c233" time="1376066802447" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -110,17 +67,7 @@
     <favorites_list name="WebDriver" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="App.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sayem/webdriver/basic/App.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="13" selection-start="166" selection-end="166" vertical-scroll-proportion="0.1983471">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -308,6 +255,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -322,7 +270,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -330,13 +277,13 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="preferences.pluginManager" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="options.lastSelected" value="preferences.pluginManager" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -364,17 +311,20 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="GLUE" />
       <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -405,20 +355,17 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="GLUE" />
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
       <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -487,7 +434,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="2" y="22" width="1922" height="993" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -503,7 +450,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19296375" sideWeight="0.6702938" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19296375" sideWeight="0.6702938" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -620,16 +567,6 @@
         <state line="24" column="18" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sayem/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="19" selection-start="112" selection-end="112" vertical-scroll-proportion="0.17225951" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sayem/Log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="33" selection-start="508" selection-end="508" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sayem/webdriver/advanced/mousehover/Mouse_Hover.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="53" selection-start="1367" selection-end="1367" vertical-scroll-proportion="0.0" />
@@ -650,16 +587,30 @@
         <state line="54" column="39" selection-start="2207" selection-end="2207" vertical-scroll-proportion="1.2236096" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sayem/webdriver/basic/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="224" column="20" selection-start="8320" selection-end="8320" vertical-scroll-proportion="0.34911242">
+        <state line="7" column="9" selection-start="166" selection-end="166" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sayem/webdriver/basic/App.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sayem/config.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="166" selection-end="166" vertical-scroll-proportion="0.1983471">
+        <state line="7" column="19" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sayem/Log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="33" selection-start="508" selection-end="508" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="224" column="20" selection-start="8320" selection-end="8320" vertical-scroll-proportion="0.377804">
           <folding />
         </state>
       </provider>
