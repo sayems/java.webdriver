@@ -355,19 +355,36 @@
         </dependency>
     </dependencies>
 
+    <pluginRepositories>
+        <pluginRepository>
+            <id>reporty-ng</id>
+            <url>https://github.com/cosminaru/reporty-ng/raw/master/dist/maven</url>
+        </pluginRepository>
+    </pluginRepositories>
+
     <build>
-        <resources>
-            <resource>
-                <directory>src/test/resources</directory>
-                <filtering>true</filtering>
-            </resource>
-        </resources>
+        <!-- Source directory configuration -->
+        <sourceDirectory>src</sourceDirectory>
+        <!-- Following plugin excutes the testng tests -->
         <pluginManagement>
             <plugins>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>2.15</version>
+                    <configuration>
+                        <suiteXmlFiles>
+                            <suiteXmlFile>testng.xml</suiteXmlFile>
+                        </suiteXmlFiles>
+                    </configuration>
+                </plugin>
+                <!-- Compiler plugin configures the java version to be used for compiling the code -->
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
                     <configuration>
+                        <encoding>iso-8859-1</encoding>
                         <source>${jdk.version}</source>
                         <target>${jdk.version}</target>
                     </configuration>
@@ -377,23 +394,23 @@
         </pluginManagement>
     </build>
 
-    <profiles>
-        <profile>
-            <id>selenium-tests</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-surefire-plugin</artifactId>
-                        <version>2.12.4</version>
-                        <configuration>
-                            <includes>
-                                <include>**/*ST.java</include>
-                            </includes>
-                        </configuration>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles>
+    <reporting>
+        <plugins>
+            <!-- TestNG-xslt related configuration. -->
+            <plugin>
+                <groupId>org.reportyng</groupId>
+                <artifactId>reporty-ng</artifactId>
+                <version>1.2</version>
+                <configuration>
+                    <!--Setting the output directory-->
+                    <outputDir>${project.basedir}/target/site/${project.artifactId}</outputDir>
+                    <!--Setting the testNgXslt.showRuntimeTotals flag-->
+                    <showRuntimeTotals>true</showRuntimeTotals>
+                    <!--Setting the testNgXslt.cssFile parameter. This should be relative to the '${basedir}/target/site/testng-xslt' directory-->
+                    <sortTestCaseLinks>true</sortTestCaseLinks>
+                    <testDetailsFilter>FAIL,PASS,SKIP,CONF</testDetailsFilter>
+                </configuration>
+            </plugin>
+        </plugins>
+    </reporting>
 </project>
