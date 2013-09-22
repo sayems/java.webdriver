@@ -20,14 +20,12 @@
     </licenses>
 
     <properties>
-        <org.selenium-version>2.33.0</org.selenium-version>
+        <org.selenium-version>2.35.0</org.selenium-version>
         <org.fitnesse-version>20130531</org.fitnesse-version>
         <jdk.version>1.7</jdk.version>
-        <org.springframework-version>3.2.3.RELEASE</org.springframework-version>
+        <org.springframework-version>3.2.1.RELEASE</org.springframework-version>
         <resources.encoding>UTF-8</resources.encoding>
         <sources.encoding>UTF-8</sources.encoding>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
 
     <dependencies>
@@ -76,46 +74,39 @@
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>6.8.5</version>
-            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.11</version>
-            <scope>test</scope>
         </dependency>
 
         <!-- Cucumber-JVM dependencies Start here -->
         <dependency>
             <groupId>info.cukes</groupId>
             <artifactId>cucumber-junit</artifactId>
-            <version>1.1.3</version>
+            <version>1.1.1</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>info.cukes</groupId>
             <artifactId>cucumber-java</artifactId>
-            <version>1.1.3</version>
+            <version>1.1.1</version>
         </dependency>
         <dependency>
             <groupId>info.cukes</groupId>
             <artifactId>cucumber-html</artifactId>
-            <version>0.2.3</version>
+            <version>0.2.2</version>
         </dependency>
         <dependency>
             <groupId>info.cukes</groupId>
             <artifactId>cucumber-picocontainer</artifactId>
-            <version>1.1.3</version>
+            <version>1.1.1</version>
             <scope>test</scope>
         </dependency>
         <!-- Cucumber-JVM dependencies end here-->
 
         <!-- Test -->
-        <dependency>
-            <groupId>org.json</groupId>
-            <artifactId>json</artifactId>
-            <version>20090211</version>
-        </dependency>
         <dependency>
             <groupId>com.rubiconproject.oss</groupId>
             <artifactId>jchronic</artifactId>
@@ -124,18 +115,7 @@
         <dependency>
             <groupId>com.googlecode.json-simple</groupId>
             <artifactId>json-simple</artifactId>
-            <version>1.1.1</version>
-        </dependency>
-        <dependency>
-            <groupId>com.opera</groupId>
-            <artifactId>operadriver</artifactId>
-            <version>1.3</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.seleniumhq.selenium</groupId>
-                    <artifactId>selenium-remote-driver</artifactId>
-                </exclusion>
-            </exclusions>
+            <version>1.1</version>
         </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>
@@ -145,12 +125,12 @@
         <dependency>
             <groupId>org.codehaus.jackson</groupId>
             <artifactId>jackson-jaxrs</artifactId>
-            <version>1.9.13</version>
+            <version>1.9.4</version>
         </dependency>
         <dependency>
             <groupId>biz.neustar</groupId>
             <artifactId>browsermob-proxy</artifactId>
-            <version>2.0-beta-7</version>
+            <version>2.0-beta-6</version>
             <exclusions>
                 <exclusion>
                     <groupId>org.seleniumhq.selenium</groupId>
@@ -161,12 +141,23 @@
         <dependency>
             <groupId>joda-time</groupId>
             <artifactId>joda-time</artifactId>
-            <version>2.2</version>
+            <version>2.0</version>
         </dependency>
         <dependency>
             <groupId>com.googlecode.lambdaj</groupId>
             <artifactId>lambdaj</artifactId>
             <version>2.3.3</version>
+        </dependency>
+        <dependency>
+            <groupId>com.opera</groupId>
+            <artifactId>operadriver</artifactId>
+            <version>1.1</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.seleniumhq.selenium</groupId>
+                    <artifactId>selenium-remote-driver</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.beanshell</groupId>
@@ -176,7 +167,7 @@
         <dependency>
             <groupId>cglib</groupId>
             <artifactId>cglib-nodep</artifactId>
-            <version>3.0</version>
+            <version>2.2.2</version>
         </dependency>
         <dependency>
             <groupId>commons-codec</groupId>
@@ -191,7 +182,7 @@
         <dependency>
             <groupId>org.apache.directory.studio</groupId>
             <artifactId>org.apache.commons.io</artifactId>
-            <version>2.4</version>
+            <version>2.1</version>
         </dependency>
         <dependency>
             <groupId>commons-jxpath</groupId>
@@ -211,12 +202,12 @@
         <dependency>
             <groupId>net.sourceforge.cssparser</groupId>
             <artifactId>cssparser</artifactId>
-            <version>0.9.9</version>
+            <version>0.9.7</version>
         </dependency>
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
-            <version>14.0.1</version>
+            <version>13.0-rc1</version>
         </dependency>
         <dependency>
             <groupId>org.apache.directory.studio</groupId>
@@ -230,13 +221,8 @@
         </dependency>
         <dependency>
             <groupId>net.sourceforge.htmlunit</groupId>
-            <artifactId>htmlunit</artifactId>
-            <version>2.12</version>
-        </dependency>
-        <dependency>
-            <groupId>net.sourceforge.htmlunit</groupId>
             <artifactId>htmlunit-core-js</artifactId>
-            <version>2.12</version>
+            <version>2.9</version>
         </dependency>
         <dependency>
             <groupId>org.apache.directory.studio</groupId>
@@ -246,22 +232,22 @@
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpcore</artifactId>
-            <version>4.3</version>
+            <version>4.2.1</version>
         </dependency>
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpmime</artifactId>
-            <version>4.2.5</version>
+            <version>4.2</version>
         </dependency>
         <dependency>
             <groupId>com.beust</groupId>
             <artifactId>jcommander</artifactId>
-            <version>1.30</version>
+            <version>1.26</version>
         </dependency>
         <dependency>
             <groupId>net.java.dev.jna</groupId>
             <artifactId>jna</artifactId>
-            <version>4.0.0</version>
+            <version>3.4.0</version>
         </dependency>
         <dependency>
             <groupId>com.github.jsr-330</groupId>
@@ -276,17 +262,17 @@
         <dependency>
             <groupId>javax.mail</groupId>
             <artifactId>mail</artifactId>
-            <version>1.4.7</version>
+            <version>1.4.5</version>
         </dependency>
         <dependency>
             <groupId>net.sourceforge.nekohtml</groupId>
             <artifactId>nekohtml</artifactId>
-            <version>1.9.18</version>
+            <version>1.9.15</version>
         </dependency>
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
-            <version>3.9</version>
+            <version>3.8</version>
         </dependency>
         <dependency>
             <groupId>org.apache.poi</groupId>
@@ -296,12 +282,12 @@
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml-schemas</artifactId>
-            <version>3.9</version>
+            <version>3.8</version>
         </dependency>
         <dependency>
             <groupId>com.google.protobuf</groupId>
             <artifactId>protobuf-java</artifactId>
-            <version>2.5.0</version>
+            <version>2.4.1</version>
         </dependency>
         <dependency>
             <groupId>org.w3c.css</groupId>
@@ -310,18 +296,8 @@
         </dependency>
         <dependency>
             <groupId>net.sf.saxon</groupId>
-            <artifactId>saxon</artifactId>
-            <version>8.7</version>
-        </dependency>
-        <dependency>
-            <groupId>net.sf.saxon</groupId>
-            <artifactId>saxon-dom</artifactId>
-            <version>8.7</version>
-        </dependency>
-        <dependency>
-            <groupId>net.sf.saxon</groupId>
             <artifactId>Saxon-HE</artifactId>
-            <version>9.5.1-1</version>
+            <version>9.4</version>
         </dependency>
         <dependency>
             <groupId>xalan</groupId>
@@ -331,12 +307,7 @@
         <dependency>
             <groupId>xerces</groupId>
             <artifactId>xercesImpl</artifactId>
-            <version>2.11.0</version>
-        </dependency>
-        <dependency>
-            <groupId>xml-apis</groupId>
-            <artifactId>xml-apis</artifactId>
-            <version>2.0.2</version>
+            <version>2.10.0</version>
         </dependency>
         <dependency>
             <groupId>xml-apis</groupId>
@@ -355,16 +326,15 @@
         </dependency>
     </dependencies>
 
-    <pluginRepositories>
-        <pluginRepository>
-            <id>reporty-ng</id>
-            <url>https://github.com/cosminaru/reporty-ng/raw/master/dist/maven</url>
-        </pluginRepository>
-    </pluginRepositories>
-
     <build>
         <!-- Source directory configuration -->
-        <sourceDirectory>src</sourceDirectory>
+        <resources>
+            <resource>
+                <directory>src/test/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+
         <!-- Following plugin excutes the testng tests -->
         <pluginManagement>
             <plugins>
