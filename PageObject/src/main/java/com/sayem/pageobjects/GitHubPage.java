@@ -1,13 +1,13 @@
 package com.sayem.pageobjects;
 
-import static com.example.setup.SeleniumDriver.getDriver;
-
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
+
+import java.util.concurrent.TimeUnit;
+
+import static com.sayem.setup.SeleniumDriver.getDriver;
 
 public abstract class GitHubPage<T> {
 
