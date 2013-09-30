@@ -1,12 +1,12 @@
 package com.sayem.test;
 
-import static com.example.setup.SeleniumDriver.getDriver;
-import static org.fest.assertions.api.Assertions.assertThat;
-
-import com.example.pageobjects.GitHubHomePage;
-import com.example.pageobjects.GitHubLoginPage;
+import com.sayem.pageobjects.GitHubHomePage;
+import com.sayem.pageobjects.GitHubLoginPage;
 import org.junit.AfterClass;
 import org.junit.Test;
+
+import static com.sayem.setup.SeleniumDriver.getDriver;
+import static org.fest.assertions.api.Assertions.assertThat;
 
 public class GitHubLoginTest {
 
