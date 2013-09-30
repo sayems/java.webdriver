@@ -5,7 +5,10 @@
   <groupId>com.sayem</groupId>
   <artifactId>WebDriver</artifactId>
   <version>1.0</version>
-  <packaging>jar</packaging>
+    <modules>
+        <module>PageObject</module>
+    </modules>
+    <packaging>pom</packaging>
 
   <name>WebDriver</name>
     <url>http://maven.apache.org</url>
