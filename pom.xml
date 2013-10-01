@@ -8,6 +8,7 @@
     <modules>
         <module>PageObject</module>
         <module>PageFactory</module>
+        <module>Examples</module>
     </modules>
     <packaging>pom</packaging>
 
