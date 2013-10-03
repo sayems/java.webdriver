@@ -15,6 +15,7 @@
         <module>JQuery</module>
         <module>JUnit</module>
         <module>TestNG</module>
+        <module>AndroidDriver</module>
     </modules>
     <packaging>pom</packaging>
 
