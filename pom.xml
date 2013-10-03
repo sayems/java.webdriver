@@ -11,6 +11,7 @@
         <module>Examples</module>
         <module>JavaScript</module>
         <module>HTML5</module>
+        <module>LoadableComponent</module>
     </modules>
     <packaging>pom</packaging>
 
