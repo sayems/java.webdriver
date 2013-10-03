@@ -10,6 +10,7 @@
         <module>PageFactory</module>
         <module>Examples</module>
         <module>JavaScript</module>
+        <module>HTML5</module>
     </modules>
     <packaging>pom</packaging>
 
