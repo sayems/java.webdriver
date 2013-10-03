@@ -12,6 +12,7 @@
         <module>JavaScript</module>
         <module>HTML5</module>
         <module>LoadableComponent</module>
+        <module>JQuery</module>
     </modules>
     <packaging>pom</packaging>
 
