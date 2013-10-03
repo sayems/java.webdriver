@@ -13,6 +13,7 @@
         <module>HTML5</module>
         <module>LoadableComponent</module>
         <module>JQuery</module>
+        <module>JUnit</module>
     </modules>
     <packaging>pom</packaging>
 
