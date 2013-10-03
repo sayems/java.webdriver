@@ -16,6 +16,7 @@
         <module>JUnit</module>
         <module>TestNG</module>
         <module>AndroidDriver</module>
+        <module>IPhoneDriver</module>
     </modules>
     <packaging>pom</packaging>
 
