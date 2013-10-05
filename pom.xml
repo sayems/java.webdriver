@@ -9,14 +9,6 @@
         <module>PageObject</module>
         <module>PageFactory</module>
         <module>Examples</module>
-        <module>JavaScript</module>
-        <module>HTML5</module>
-        <module>LoadableComponent</module>
-        <module>JQuery</module>
-        <module>JUnit</module>
-        <module>TestNG</module>
-        <module>AndroidDriver</module>
-        <module>IPhoneDriver</module>
     </modules>
     <packaging>pom</packaging>
 
