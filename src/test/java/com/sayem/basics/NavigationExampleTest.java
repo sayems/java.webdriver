@@ -1,6 +1,6 @@
 package com.sayem.basics;
 
-import com.seleniumsimplified.webdriver.manager.Driver;
+import com.sayem.webdriver.examples.Driver;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
