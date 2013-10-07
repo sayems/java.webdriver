@@ -1,4 +1,4 @@
-package com.sayem.basics;
+package com.sayem.basics.navigation;
 
 import com.sayem.webdriver.examples.Driver;
 import org.junit.AfterClass;
