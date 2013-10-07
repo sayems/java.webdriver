@@ -1,7 +1,6 @@
 package com.sayem.screenshots;
 
 import com.sayem.webdriver.examples.Driver;
-import org.apache.commons.io.FileUtils;
 import org.bouncycastle.util.encoders.Base64;
 import org.junit.After;
 import org.junit.Test;
@@ -49,7 +48,7 @@ public class PersistScreenshotsTest {
             File testTempImage = new File(testTempDir, newImageFileName);
 
             // move screenshot to our local store
-            FileUtils.moveFile(tempImageFile, testTempImage);
+//            FileUtils.moveFile(tempImageFile, testTempImage);
             assertThat(testTempImage.length(), is(greaterThan(0L)));
 
             // use these lines in debug mode
