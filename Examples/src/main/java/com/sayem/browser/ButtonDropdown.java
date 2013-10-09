@@ -21,8 +21,6 @@ public class ButtonDropdown {
 		dr.get(filePath);
 		Thread.sleep(1000);
 		
-//		��λtext��watir-webdriver�������˵�
-//		������ʾ�����˵�
 		dr.findElement(By.linkText("Info")).click();
 		
 		(new WebDriverWait(dr, 10)).until(new ExpectedCondition<Boolean>() {
@@ -31,7 +29,6 @@ public class ButtonDropdown {
 			}
 		});
 		
-//		ͨ��ul�ٲ㼶��λ
 		dr.findElement(By.className("dropdown-menu")).findElement(By.linkText("watir-webdriver")).click();
 		
 		Thread.sleep(1000);

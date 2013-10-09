@@ -22,11 +22,9 @@ public class Navs {
 		dr.get(filePath);
 		Thread.sleep(1000);
 		
-//		����1���㼶��λ���ȶ�λul�ٶ�λli
 		dr.findElement(By.className("nav")).findElement(By.linkText("About")).click();
 		Thread.sleep(1000);
 		
-//		����2: ֱ�Ӷ�λlink
 		dr.findElement(By.linkText("Home")).click();
 		
 		Thread.sleep(1000);

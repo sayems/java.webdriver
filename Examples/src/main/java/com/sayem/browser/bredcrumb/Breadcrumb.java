@@ -21,15 +21,11 @@ public class Breadcrumb {
 		dr.get(filePath);
 		Thread.sleep(1000);
 		
-//		获得其父层级
 		List<WebElement> ancestors = dr.findElement(By.className("breadcrumb")).findElements(By.tagName("a"));
 		for(WebElement link : ancestors){
 			System.out.println(link.getText());
 		}
 		
-//		获取当前层级
-//		由于页面上可能有很多class为active的元素
-//		所以使用层级定位最为保险
 		WebElement current = dr.findElement(By.className("breadcrumb")).findElement(By.className("active"));
 		System.out.println(current.getText());
 		

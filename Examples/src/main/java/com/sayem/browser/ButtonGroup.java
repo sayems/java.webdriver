@@ -22,7 +22,6 @@ public class ButtonGroup {
 		dr.get(filePath);
 		Thread.sleep(1000);
 		
-//		��λtext��second�İ�ť
 		List<WebElement> btns = dr.findElement(By.className("btn-group")).findElements(By.className("btn"));
 		
 		for(WebElement btn : btns){
