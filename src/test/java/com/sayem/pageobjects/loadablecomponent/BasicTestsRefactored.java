@@ -1,14 +1,15 @@
 package com.sayem.pageobjects.loadablecomponent;
 
+import com.sayem.pageobjects.loadablecomponent.pages.BasicAjaxPageObject;
+import com.sayem.pageobjects.loadablecomponent.pages.ProcessedFormPage;
 import com.sayem.webdriver.examples.Driver;
-import com.sayem.webdriver.pageobjects.loadablecomponent.pages.BasicAjaxPageObject;
-import com.sayem.webdriver.pageobjects.loadablecomponent.pages.ProcessedFormPage;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 
-import static com.sayem.webdriver.pageobjects.loadablecomponent.pages.BasicAjaxPageObject.Category;
-import static com.sayem.webdriver.pageobjects.loadablecomponent.pages.BasicAjaxPageObject.Language;
+import static com.sayem.pageobjects.loadablecomponent.pages.BasicAjaxPageObject.Category;
+import static com.sayem.pageobjects.loadablecomponent.pages.BasicAjaxPageObject.Language;
 import static junit.framework.Assert.assertEquals;
 
 public class BasicTestsRefactored {
@@ -27,7 +28,7 @@ public class BasicTestsRefactored {
     @Test
     public void chooseToCodeInJavaOnTheServerFromCombosSyncOnAjaxBusyExample(){
 
-        basicAjaxPage.selectCategory(Category.SERVER);
+        basicAjaxPage.selectCategory(BasicAjaxPageObject.Category.SERVER);
         basicAjaxPage.selectLanguage(Language.JAVA);
         basicAjaxPage.clickCodeInIt();
 
