@@ -9,6 +9,7 @@
         <module>PageObject</module>
         <module>PageFactory</module>
         <module>Examples</module>
+        <module>MagentoCommerce</module>
     </modules>
     <packaging>pom</packaging>
 
