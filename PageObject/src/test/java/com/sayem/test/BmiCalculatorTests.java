@@ -1,9 +1,9 @@
 package com.sayem.test;
 
+import com.sayem.pageobjects.BmiCalcPage;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-import seleniumcookbook.tests.pageobjects.*;
+import static org.junit.Assert.assertEquals;
 
 public class BmiCalculatorTests {
 
