@@ -2,6 +2,8 @@ package com.sayem.webdriver.examples;
 
 import java.io.File;
 
+import com.sayem.webdriver.examples.compareimage.CompareUtil;
+import com.sayem.webdriver.examples.webelementextender.WebElementExtender;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.By;
