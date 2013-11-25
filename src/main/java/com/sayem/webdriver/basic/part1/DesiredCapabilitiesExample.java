@@ -1,4 +1,4 @@
-package com.sayem.webdriver.basic;
+package com.sayem.webdriver.basic.part1;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
