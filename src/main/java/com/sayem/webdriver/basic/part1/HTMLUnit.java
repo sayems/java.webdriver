@@ -1,7 +1,7 @@
 package com.sayem.webdriver.basic.part1;
 
-import com.gargoylesoftware.htmlunit.BrowserVersion;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
+import com.gargoylesoftware.htmlunit.BrowserVersion;
 
 public class HTMLUnit {
 
