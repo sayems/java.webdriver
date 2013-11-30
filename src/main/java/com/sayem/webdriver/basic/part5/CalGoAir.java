@@ -77,3 +77,4 @@ public class CalGoAir {
             System.out.println();// new line
         }
     }
+}
