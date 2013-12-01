@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="test Suite" verbose="3" parallel="tests" thread-count="10">
+
+<test name="Testie"  >
+<parameter name="browser" value="firefox"></parameter>
+    <classes>
+        <class name="Grid.TestApp1" ></class> 
+        
+    </classes>
+</test>
+
+<test name="Testff"  >
+<parameter name="browser" value="firefox"></parameter>
+    <classes>
+        
+        <class name="Grid.TestApp2"></class> 
+    </classes>
+</test>
+
+</suite>
