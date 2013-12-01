@@ -10,6 +10,7 @@
         <module>PageFactory</module>
         <module>Examples</module>
         <module>MagentoCommerce</module>
+        <module>Grid</module>
     </modules>
     <packaging>pom</packaging>
 
