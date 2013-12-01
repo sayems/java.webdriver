@@ -2,7 +2,7 @@
 <suite name="test Suite" verbose="3" parallel="tests" thread-count="10">
 
     <test name="Testie"  >
-    <parameter name="browser" value="firefox"></parameter>
+        <parameter name="browser" value="firefox"></parameter>
         <classes>
             <class name="com.sayem.grid.TestApp1" ></class>
 
@@ -10,7 +10,7 @@
     </test>
 
     <test name="Testff"  >
-    <parameter name="browser" value="firefox"></parameter>
+        <parameter name="browser" value="firefox"></parameter>
         <classes>
 
             <class name="com.sayem.grid.TestApp2"></class>
