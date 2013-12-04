@@ -19,7 +19,7 @@ public class MouseMovement {
 
         WebDriver web_driver = new FirefoxDriver();
         EventFiringWebDriver driver = new EventFiringWebDriver(web_driver);
-        MyListener myListener = new MyListener();
+        MyListerner myListener = new MyListerner();
         driver.register(myListener);
 
         driver.get("http://timesofindia.com");

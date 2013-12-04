@@ -11,7 +11,7 @@ public class ListenerTest {
     public static void main(String[] args) throws InterruptedException {
         WebDriver web_driver = new FirefoxDriver();
         EventFiringWebDriver driver = new EventFiringWebDriver(web_driver);
-        MyListener myListener = new MyListener();
+        MyListerner myListener = new MyListerner();
         driver.register(myListener);
 
         driver.navigate().to("http://www.gmail.com");
