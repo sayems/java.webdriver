@@ -11,6 +11,7 @@
         <module>Examples</module>
         <module>MagentoCommerce</module>
         <module>Grid</module>
+        <module>Selenium</module>
     </modules>
     <packaging>pom</packaging>
 
