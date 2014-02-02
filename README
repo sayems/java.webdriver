@@ -1,1 +1,11 @@
-I kept all the code under src > main > java > com > sayem > webdriver
+I'm trying to organize my growing code by splitting various modules/packages into several smaller packages.
+
+For example,
+
+Interface WebElement
+====================
+=> clear() method example in webelement package
+=> click() method example in webelement package
+=> findElement(By example in webelement package
+
+You'll find all the examples code in Selenium modules
