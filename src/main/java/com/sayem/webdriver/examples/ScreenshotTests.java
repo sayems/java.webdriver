@@ -17,7 +17,7 @@ public class ScreenshotTests {
 	public void setUp()
 	{
 		driver = new FirefoxDriver();
-		driver.get("http://www.google.com");
+		driver.get("http://www.by.com");
 	}
   
 	@Test

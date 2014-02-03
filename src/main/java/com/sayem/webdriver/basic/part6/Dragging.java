@@ -8,7 +8,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.interactions.Actions;
 
-//http://code.google.com/p/selenium/wiki/AdvancedUserInteractions#Native_events_versus_synthetic_events
+//http://code.by.com/p/selenium/wiki/AdvancedUserInteractions#Native_events_versus_synthetic_events
 public class Dragging {
 
     public static void main(String[] args) {

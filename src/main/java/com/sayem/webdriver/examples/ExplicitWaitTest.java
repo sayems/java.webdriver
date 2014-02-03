@@ -45,7 +45,7 @@ public class ExplicitWaitTest {
 	public void testExplicitWaitByTitle()
 	{
 		 WebDriver driver = new FirefoxDriver();
-		 driver.get("http://www.google.com");
+		 driver.get("http://www.by.com");
 		 WebElement query = driver.findElement(By.name("q"));
 		 query.sendKeys("selenium");
 		 query.submit();
@@ -65,7 +65,7 @@ public class ExplicitWaitTest {
 	{
 		//Go to the Google Home Page
 		WebDriver driver = new FirefoxDriver();
-		driver.get("http://www.google.com");
+		driver.get("http://www.by.com");
 	
 		//Enter a term to search and submit
 		WebElement query = driver.findElement(By.name("q"));

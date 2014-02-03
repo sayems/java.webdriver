@@ -12,7 +12,7 @@ public class ExecuteJavaScript {
 	public void testJavaScriptCalls() throws Exception
 	{
 		WebDriver driver = new ChromeDriver();
-		driver.get("http://www.google.com");
+		driver.get("http://www.by.com");
 			
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		

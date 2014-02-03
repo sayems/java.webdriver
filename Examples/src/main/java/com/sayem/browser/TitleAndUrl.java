@@ -10,7 +10,7 @@ public class TitleAndUrl {
 		WebDriver dr = new ChromeDriver();
 		Thread.sleep(2000);
 		
-		String url = "http://www.google.com";
+		String url = "http://www.by.com";
 		System.out.printf("now accesss %s \n", url);
 		
 		dr.get(url);

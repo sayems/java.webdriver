@@ -27,7 +27,7 @@ public class RemoteWebDriverScreenShot {
 		DesiredCapabilities cap = new DesiredCapabilities();
 			
 		driver = new RemoteWebDriver(new URL("http://192.168.1.100:3001/wd/hub"),cap.ipad());
-		driver.get("http://www.google.com");
+		driver.get("http://www.by.com");
 	}
 
 	@Test
