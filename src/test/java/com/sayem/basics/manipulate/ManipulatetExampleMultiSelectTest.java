@@ -42,7 +42,7 @@ public class ManipulatetExampleMultiSelectTest {
         multiSelectOptions.get(1).click();
         multiSelectOptions.get(2).click();
 
-        // 4 is normally set by default
+        // 4 is normally set by_class default
         if(multiSelectOptions.get(3).isSelected()){
             multiSelectOptions.get(3).click();
         }

@@ -26,7 +26,7 @@ public class DropDown {
             System.out.println(allOptions.get(i).getText()+" ---- "+ allOptions.get(i).getAttribute("selected"));
         }
 
-        // select by index - 5th
+        // select by_class index - 5th
 
         // 2nd way
         Select s = new Select(droplist);

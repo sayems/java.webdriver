@@ -108,7 +108,7 @@ public class WindowPopupTest {
 					try {
 				
 						//Find the Close Button on Chat Popup Window and close the Popup
-						//by clicking Close Button instead of closing it directly
+						//by_class clicking Close Button instead of closing it directly
 						WebElement closeButton = driver.findElement(By.id("closebutton"));
 						closeButton.click();
 						break;

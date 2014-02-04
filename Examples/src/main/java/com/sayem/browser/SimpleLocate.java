@@ -21,35 +21,35 @@ public class SimpleLocate {
 		dr.get(filePath);
 		Thread.sleep(2000);
 		
-//		by id
+//		by_class id
 		dr.findElement(By.id("inputEmail")).click();
 		Thread.sleep(1000);
 		
-//		by name
+//		by_class name
 		dr.findElement(By.name("password"));
 		Thread.sleep(1000);
 		
-//		by tagname
+//		by_class tagname
 		String classOfForm = dr.findElement(By.tagName("form")).getAttribute("class");
 		System.out.printf("%s\n", classOfForm);
 		Thread.sleep(1000);
 		
-//		by link text
+//		by_class link text
 		WebElement link = dr.findElement(By.linkText("register"));
 		((JavascriptExecutor)dr).executeScript("$(arguments[0]).fadeOut().fadeIn()", link);
 		Thread.sleep(1000);
 
-//		by partial link test
+//		by_class partial link test
 		WebElement sameLink = dr.findElement(By.partialLinkText("reg"));
 		((JavascriptExecutor)dr).executeScript("$(arguments[0]).fadeOut().fadeIn()", sameLink);
 		Thread.sleep(1000);
 		
-//		by css selector
+//		by_class css selector
 		WebElement div = dr.findElement(By.cssSelector(".controls"));
 		((JavascriptExecutor)dr).executeScript("$(arguments[0]).fadeOut().fadeIn()", div);
 		Thread.sleep(1000);
 		
-//		by xpath
+//		by_class xpath
 		dr.findElement(By.xpath("/html/body/form/div[3]/div/label/input")).click();
 		Thread.sleep(1000);
 		

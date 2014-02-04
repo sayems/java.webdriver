@@ -56,7 +56,7 @@ public class WebElementExtender {
     //This will provide X & Y co-ordinates of the WebElement
     Point p = element.getLocation();
     
-    //Create image by for element using its location and size. 
+    //Create image by_class for element using its location and size.
     //This will give image data specific to the WebElement
     BufferedImage dest = img.getSubimage(p.getX(), p.getY(), rect.width,         
                                           rect.height);

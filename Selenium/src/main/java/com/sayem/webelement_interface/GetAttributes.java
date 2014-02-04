@@ -1,4 +1,4 @@
-package com.sayem.webelement;
+package com.sayem.webelement_interface;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

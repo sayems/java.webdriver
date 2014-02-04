@@ -1,16 +1,15 @@
-package com.sayem.by;
+package com.sayem.webelement_interface;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class GoogleSearch {
-    public static void main(String[] args){
+public class GetText {
+    public static void main(String[] args) {
         WebDriver driver = new FirefoxDriver();
         driver.get("http://www.google.com");
-        WebElement searchBox = driver.findElement(By.name("q"));
-        searchBox.sendKeys("Selenium");
-        searchBox.submit();
+        WebElement searchButton = driver.findElement(By.name("btnK"));
+        System.out.println(searchButton.getText());
     }
 }

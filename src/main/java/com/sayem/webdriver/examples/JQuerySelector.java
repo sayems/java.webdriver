@@ -34,7 +34,7 @@ public class JQuerySelector {
 		//Create an instance of JavaScript Executor from driver
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 
-		//Locate all the Checkbox which are checked by calling jQuery find() method. 
+		//Locate all the Checkbox which are checked by_class calling jQuery find() method.
 		//find() method returns elements in array
 		List<WebElement> elements = (List<WebElement>) js.executeScript("return jQuery.find(':checked')");
 

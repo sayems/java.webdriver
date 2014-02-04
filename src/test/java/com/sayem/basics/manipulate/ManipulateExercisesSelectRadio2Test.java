@@ -29,7 +29,7 @@ public class ManipulateExercisesSelectRadio2Test {
 
         radioButton2 = driver.findElement(By.cssSelector("input[value='rd2']"));
 
-        //radioButton2 is not selected by default, but we trust nothing
+        //radioButton2 is not selected by_class default, but we trust nothing
         if(!radioButton2.isSelected()){
             radioButton2.click();
         }

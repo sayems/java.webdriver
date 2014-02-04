@@ -82,7 +82,7 @@ public class FirefoxDriverTest {
 
         FirefoxProfile profile = new FirefoxProfile();
 
-        // stop firebug showing the first run screen by setting the last version
+        // stop firebug showing the first run screen by_class setting the last version
         // to the current one
         profile.setPreference("extensions.firebug.currentVersion", "1.10.5");
 

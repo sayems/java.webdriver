@@ -16,7 +16,7 @@ public class BaseTest{
     public void setUp() {
         // Navigate to the right place
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.get("http://www.by.ca/");
+        driver.get("http://www.by_class.ca/");
     }
 
      @After

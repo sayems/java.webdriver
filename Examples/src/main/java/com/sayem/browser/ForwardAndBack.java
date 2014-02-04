@@ -10,7 +10,7 @@ public class ForwardAndBack {
 		WebDriver dr = new ChromeDriver();
 		Thread.sleep(2000);
 		
-		String firstUrl = "http://www.by.com";
+		String firstUrl = "http://www.by_class.com";
 		System.out.printf("now accesss %s \n", firstUrl);
 		dr.get(firstUrl);
 		Thread.sleep(1000);

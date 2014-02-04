@@ -69,7 +69,7 @@ public class FramesTest {
 		//Get all frames on the Page, created with <frame> tag
 		List<WebElement> frames = driver.findElements(By.tagName("frame"));
 
-		//In this example frame in the middle is activated by checking the contents
+		//In this example frame in the middle is activated by_class checking the contents
 		//Activate frame and check if it has the desired content. If found perform the operations
 		//if not, then switch back to the Page and continue checking next frame
 		for(WebElement frame : frames) {
@@ -108,7 +108,7 @@ public class FramesTest {
 		
 		//The Twitter Popup does not have name or title. 
 		//Script will get handles of all open windows and 
-		//desired window will be activated by checking it's Title
+		//desired window will be activated by_class checking it's Title
 		Set<String> allWindows = driver.getWindowHandles();
 		if(!allWindows.isEmpty()) {
 			for (String windowId : allWindows)

@@ -57,7 +57,7 @@ public class TestApp2{
         System.out.println("A");
         driver = new RemoteWebDriver(new URL("http://192.168.1.5:4444/wd/hub"), capability);
         System.out.println("B");
-        driver.get("http://by.com");
+        driver.get("http://by_class.com");
         Thread.sleep(10000L);
     }
 

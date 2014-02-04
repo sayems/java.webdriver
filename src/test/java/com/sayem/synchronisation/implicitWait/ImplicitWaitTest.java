@@ -142,7 +142,7 @@ public class ImplicitWaitTest {
 
         System.out.println("Time to not find an element " + totalTimeToNotFindElement);
 
-        // wait for 0 seconds implicitly by default
+        // wait for 0 seconds implicitly by_class default
         driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
 
         assertTrue("expected slower time to not find element",

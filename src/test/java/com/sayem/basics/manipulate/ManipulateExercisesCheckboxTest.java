@@ -40,7 +40,7 @@ public class ManipulateExercisesCheckboxTest {
         // interaction tests could be made robust
         checkBox1.click();
 
-        //checkBox3 is selected by default, but we trust nothing
+        //checkBox3 is selected by_class default, but we trust nothing
         if(checkBox3.isSelected()){
             checkBox3.click();
         }
@@ -90,7 +90,7 @@ public class ManipulateExercisesCheckboxTest {
             checkBox1.click();
         }
 
-        //checkBox3 is selected by default, but we trust nothing
+        //checkBox3 is selected by_class default, but we trust nothing
         if(checkBox3.isSelected()){
             checkBox3.click();
         }

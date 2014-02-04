@@ -45,7 +45,7 @@ public class ChromeDriverTest {
 
     @Test
     /*
-      * Chrome is supported by WebDriver, on linux it may not
+      * Chrome is supported by_class WebDriver, on linux it may not
       * find the location of your browser
       * the 'which' command for chromium-browser may find it
       */

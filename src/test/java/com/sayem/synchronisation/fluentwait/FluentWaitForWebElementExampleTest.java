@@ -22,7 +22,7 @@ public class FluentWaitForWebElementExampleTest {
 
     /**
      * Fluent wait can wait for WebElements not just driver
-     * see http://code.by.com/p/guava-libraries/wiki/FunctionalExplained
+     * see http://code.by_class.com/p/guava-libraries/wiki/FunctionalExplained
      * for more info on Predicate and Function
      */
     private static WebDriver driver;

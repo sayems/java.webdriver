@@ -29,7 +29,7 @@ public class RadioButtonTest {
  		WebElement petrol = driver.findElement(By.xpath("//input[@value='Petrol']"));
  		
  		//Check if its already selected? otherwise select the Radio Button 
- 		//by calling click() method 
+ 		//by_class calling click() method
  		if (!petrol.isSelected())
  			petrol.click();
  		

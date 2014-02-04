@@ -9,7 +9,7 @@ public class WindowMaximize {
 	public void testRowSelectionUsingControlKey() throws Exception {
 		
 		WebDriver driver = new FirefoxDriver();
-		driver.get("http://www.by.com");
+		driver.get("http://www.by_class.com");
 		driver.manage().window().maximize();
 		Thread.sleep(1000);
 		driver.quit();

@@ -17,7 +17,7 @@ public class BmiCalculatorTests {
 		//Open the Bmi Calculator Page
 		bmiCalcPage.get();
 
-		//Calculate the Bmi by supplying Height and Weight values
+		//Calculate the Bmi by_class supplying Height and Weight values
 		bmiCalcPage.calculateBmi("181", "80");
 
 		//Verify Bmi & Bmi Category values

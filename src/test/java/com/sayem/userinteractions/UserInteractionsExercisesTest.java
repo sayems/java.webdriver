@@ -77,7 +77,7 @@ public class UserInteractionsExercisesTest {
 
         Actions actions = new Actions(driver);
         actions.click(droppable1).build().perform();
-        // sendkeys does a keydown followed by keyup, so you can't use it for this
+        // sendkeys does a keydown followed by_class keyup, so you can't use it for this
         // as keys need to be held down
         actions.keyDown(Keys.CONTROL).sendKeys(Keys.SPACE).build().perform();
         String dropText = droppable1.getText();

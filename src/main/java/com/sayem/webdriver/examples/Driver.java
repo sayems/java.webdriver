@@ -230,7 +230,7 @@ public class Driver extends Thread{
 
     public static void quit(){
         if(aDriver!=null){
-            System.out.println("total time saved by reusing browsers " + savedTimecount + "ms");
+            System.out.println("total time saved by_class reusing browsers " + savedTimecount + "ms");
             try{
                 aDriver.quit();
                 aDriver=null;

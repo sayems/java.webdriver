@@ -27,7 +27,7 @@ public class CheckBoxTest {
  		WebElement airbags = driver.findElement(By.xpath("//input[@value='Airbags']"));
  		
  		//Check if its already selected? otherwise select the Checkbox
- 		//by calling click() method
+ 		//by_class calling click() method
  		if (!airbags.isSelected())
  			airbags.click();
  		
@@ -35,7 +35,7 @@ public class CheckBoxTest {
  		assertTrue(airbags.isSelected());
 
  		//Check Checkbox if selected? If yes, deselect it
- 		//by calling click() method
+ 		//by_class calling click() method
  		if (airbags.isSelected())
  			airbags.click();
  		

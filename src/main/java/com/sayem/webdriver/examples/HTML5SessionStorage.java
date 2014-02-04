@@ -38,7 +38,7 @@ public class HTML5SessionStorage {
 		assertEquals(null, clickcount);
 		assertEquals("0", clicksField.getAttribute("value"));
 		
-		//Click the Button, this will increase the sessionStorage.clickcount value by 1
+		//Click the Button, this will increase the sessionStorage.clickcount value by_class 1
 		clickButton.click();
 		
 		//Get current value of sessionStorage.clickcount, should be 1

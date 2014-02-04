@@ -1,15 +1,16 @@
-package com.sayem.webelement;
+package com.sayem.by_class;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class isSelected {
+public class ByXPath {
     public static void main(String[] args) {
         WebDriver driver = new FirefoxDriver();
         driver.get("http://www.google.com");
-        WebElement searchBox = driver.findElement(By.name("q"));
-        System.out.println(searchBox.isSelected());
+        WebElement searchButton = driver.findElement(By
+                .xpath("//*[@id='gbqfba']"));
+        System.out.println(searchButton.getText());
     }
 }

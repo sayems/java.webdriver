@@ -16,7 +16,7 @@ public class WindowsExampleTest {
     public void switchToNewWindow(){
 
         // Current bug open with chrome driver
-        // http://code.by.com/p/chromedriver/issues/detail?id=107
+        // http://code.by_class.com/p/chromedriver/issues/detail?id=107
 
         WebDriver driver = Driver.get(
                     "http://www.compendiumdev.co.uk/selenium/frames");

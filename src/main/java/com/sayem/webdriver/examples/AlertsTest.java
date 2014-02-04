@@ -34,7 +34,7 @@ public class AlertsTest {
 			//Get the Text displayed on Alert using getText() method of Alert class
 			String textOnAlert = alert.getText();
 			
-			//Click OK button, by calling accept() method of Alert Class
+			//Click OK button, by_class calling accept() method of Alert Class
 			alert.accept();
 			
 			//Verify Alert displayed correct message to user
@@ -57,7 +57,7 @@ public class AlertsTest {
 			//Get the Alert
 			Alert alert = driver.switchTo().alert();
 			
-			//Click OK button, by calling accept() method of Alert Class
+			//Click OK button, by_class calling accept() method of Alert Class
 			alert.accept();
 			
 			//Verify Page displays correct message on Accept
@@ -81,7 +81,7 @@ public class AlertsTest {
 			//Get the Alert
 			Alert alert = driver.switchTo().alert();
 			
-			//Click Cancel button, by calling dismiss() method of Alert Class
+			//Click Cancel button, by_class calling dismiss() method of Alert Class
 			alert.dismiss();
 
 			//Verify Page displays correct message on Dismiss
@@ -106,10 +106,10 @@ public class AlertsTest {
 			//Get the Alert
 			Alert alert = driver.switchTo().alert();
 
-			//Enter some value on Prompt by calling sendKeys() method of Alert Class
+			//Enter some value on Prompt by_class calling sendKeys() method of Alert Class
 			alert.sendKeys("Foo");
 			
-			//Click OK button, by calling accept() method of Alert Class
+			//Click OK button, by_class calling accept() method of Alert Class
 			alert.accept();
 			
 			//Verify Page displays message with value entered in Prompt
