@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class MoveByOffSet {
+public class MoveByOffset {
     public static void main(String... args) {
         WebDriver driver = new FirefoxDriver();
         driver.get("file://C:/Selectable.html");
