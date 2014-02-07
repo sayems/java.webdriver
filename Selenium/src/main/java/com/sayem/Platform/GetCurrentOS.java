@@ -7,7 +7,7 @@ import java.util.Arrays;
 
 import static org.openqa.selenium.Platform.getCurrent;
 
-public class GetPlatform {
+public class GetCurrentOS {
 
     public static void main(String[] args) {
 

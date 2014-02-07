@@ -1,11 +1,17 @@
-package com.sayem.webdriver;
+package com.sayem.webdriver.navigation;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class NavigateToAUrl {
+import java.util.concurrent.TimeUnit;
+
+public class Refresh {
     public static void main(String[] args){
+
         WebDriver driver = new FirefoxDriver();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
         driver.get("http://www.google.com");
+        driver.navigate().refresh();
     }
 }
