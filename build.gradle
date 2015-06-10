@@ -15,6 +15,8 @@ repositories {
 
 dependencies {
     compile(
+            ['org.json:json:20141113'],
+            ['net.lightbody.bmp:browsermob-proxy:2.1.0-beta-1'],
             ['io.appium:java-client:2.2.0'],
             ['org.seleniumhq.selenium:selenium-java:2.46.0'],
             ['org.testng:testng:6.9.4'],
