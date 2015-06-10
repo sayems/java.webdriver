@@ -9,7 +9,7 @@ All tests examples in this repository is to be considered public domain unless s
 
 ###Contributions
 
-If you have any apps you would like to contribute to this repository, please feel free to open a pull request.
+If you have any code examples you would like to contribute to this repository, please feel free to open a pull request.
 
 ##Feedback
 
