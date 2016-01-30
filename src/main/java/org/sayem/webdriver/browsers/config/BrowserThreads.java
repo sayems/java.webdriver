@@ -138,10 +138,10 @@ public class BrowserThreads {
     }
 
     private void setup() {
-        try {
+        if (defaultUrl.isEmpty()) {
+            System.err.println("No URL specified, defaulting to: " + defaultUrl + "'...");
             webdriver.navigate().to(TestBase.getProperties(Repository.URL));
-        } catch (NullPointerException ignored) {
-            System.err.println("No URL specified in property file, defaulting to: " + defaultUrl + "'...");
+        }else {
             webdriver.navigate().to(defaultUrl);
         }
     }

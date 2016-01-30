@@ -12,7 +12,9 @@ import static org.openqa.selenium.By.cssSelector;
  * Created by sayem on 10/05/15.
  */
 public enum CssSelector implements Supplier<By> {
-    ;
+
+    AVAILABLE_EXAMPLES("#content>ul>li>a");
+
     private final By by;
 
     CssSelector(String id) {
