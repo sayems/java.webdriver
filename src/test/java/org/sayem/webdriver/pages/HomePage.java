@@ -16,10 +16,24 @@ public class HomePage {
         this.browser = new Browser(driver);
     }
 
-    public DropdownPage goToDropdownPage(){
+    private void availableExamples(String example) {
         browser.findElements(CssSelector.AVAILABLE_EXAMPLES)
-                .filter((s) -> s.getText().equals("Dropdown"))
+                .filter((s) -> s.getText().equals(example))
                 .findAny().get().click();
+    }
+
+    public DropdownPage dropdown(){
+        availableExamples("Dropdown");
         return TestBase.pageFactory(DropdownPage.class);
+    }
+
+    public CheckboxPage checkboxes(){
+        availableExamples("Checkboxes");
+        return TestBase.pageFactory(CheckboxPage.class);
+    }
+
+    public ContextMenuPage contextMenu(){
+        availableExamples("Context Menu");
+        return TestBase.pageFactory(ContextMenuPage.class);
     }
 }
