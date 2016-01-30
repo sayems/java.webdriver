@@ -19,7 +19,8 @@ public class DropdownPage {
     public DropdownPage selectDropDown(){
         browser.untilFound(Id.DROPDOWN_LIST);
         browser.getSelect().selectByText(Id.DROPDOWN_LIST, "Option 1");
-        Assert.assertEquals(browser.getSelect().getFirstSelectedText(Id.DROPDOWN_LIST), "Option 1");
+        Assert.assertEquals(browser.getSelect()
+                .getFirstSelectedText(Id.DROPDOWN_LIST), "Option 1");
         return this;
     }
 }

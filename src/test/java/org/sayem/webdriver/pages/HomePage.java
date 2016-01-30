@@ -8,15 +8,15 @@ import org.sayem.webdriver.selenium.Browser;
 /**
  * Created by sayem on 1/30/16.
  */
-public class InternetPage {
+public class HomePage {
 
     private Browser browser;
 
-    public InternetPage(WebDriver driver) {
+    public HomePage(WebDriver driver) {
         this.browser = new Browser(driver);
     }
 
-    public DropdownPage goToDrownPage(){
+    public DropdownPage goToDropdownPage(){
         browser.findElements(CssSelector.AVAILABLE_EXAMPLES)
                 .filter((s) -> s.getText().equals("Dropdown"))
                 .findAny().get().click();
