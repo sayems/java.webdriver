@@ -7,6 +7,14 @@ Over time, more and more test example will be uploaded here.
 
 All tests examples in this repository is to be considered public domain unless stated otherwise.  
 
+## Pre-requisites
+
+You'll need to install
+
+* Java 8.
+* Maven.
+* Firefox.
+
 ###Contributions
 
 If you have any code examples you would like to contribute to this repository, please feel free to open a pull request.
