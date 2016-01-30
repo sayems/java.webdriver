@@ -1,7 +1,7 @@
 package org.sayem.webdriver.testcases;
 
 import org.sayem.webdriver.TestBase;
-import org.sayem.webdriver.pages.HomePage;
+import org.sayem.webdriver.pages.internet.HomePage;
 import org.testng.annotations.Test;
 
 public class TheInternetTest extends TestBase{

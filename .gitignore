@@ -7,6 +7,10 @@ selenium.log
 selenium.log.*
 config.properties
 test-output
+selenium_standalone
+selenium_standalone_zips
+phantomjsdriver.log
+
 
 ### Gradle
 *~
@@ -70,7 +74,7 @@ global-groovy.log
 *.iml
 
 ## Directory-based project format:
-.idea/
+.idea
 # if you remove the above rule, at least ignore the following:
 
 # User-specific stuff:
@@ -111,7 +115,7 @@ atlassian-ide-plugin.xml
 com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
- 
+
 ### Eclipse ###
 *.pydevproject
 .metadata
@@ -148,7 +152,7 @@ local.properties
 
 # TeXlipse plugin
 .texlipse
- 
+
 ### Maven ###
 pom.xml.tag
 pom.xml.releaseBackup

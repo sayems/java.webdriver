@@ -7,6 +7,23 @@ Over time, more and more test example will be uploaded here.
 
 All tests examples in this repository is to be considered public domain unless stated otherwise.  
 
+## Example with following web page:
+
+- The Internet by Elemental Selenium - http://the-internet.herokuapp.com/
+- jQuery UI Demos - http://jqueryui.com/demos/
+
+## Examples with:
+
+- Mouse hover
+- Drag & Drop
+- Draggable
+- Selectable
+- Sortable
+- Actionable
+- Radio Button
+- Checkbox
+- Datepicker
+
 ## Pre-requisites
 
 You'll need to install
