@@ -13,7 +13,10 @@ import static org.openqa.selenium.By.cssSelector;
  */
 public enum CssSelector implements Supplier<By> {
 
-    AVAILABLE_EXAMPLES("#content>ul>li>a");
+    AVAILABLE_EXAMPLES("#content>ul>li>a"),
+    CHECKBOX("#checkboxes > input:nth-of-type(1)"),
+
+    ;
 
     private final By by;
 

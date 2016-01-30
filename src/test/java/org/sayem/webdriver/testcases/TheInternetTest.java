@@ -32,12 +32,4 @@ public class TheInternetTest extends TestBase{
         page.checkboxes()
                 .selectCheckbox();
     }
-
-    @Test
-    public void contextMenuTest(){
-        System.setProperty("seleniumUrl", "http://the-internet.herokuapp.com/");
-        HomePage page = pageFactory(HomePage.class);
-        page.contextMenu()
-                .selectContextMenu();
-    }
 }

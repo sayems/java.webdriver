@@ -31,9 +31,4 @@ public class HomePage {
         availableExamples("Checkboxes");
         return TestBase.pageFactory(CheckboxPage.class);
     }
-
-    public ContextMenuPage contextMenu(){
-        availableExamples("Context Menu");
-        return TestBase.pageFactory(ContextMenuPage.class);
-    }
 }

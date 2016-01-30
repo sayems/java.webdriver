@@ -11,7 +11,6 @@ import static org.openqa.selenium.By.id;
  * Created by sayem on 10/05/15.
  */
 public enum Id implements Supplier<By> {
-
     DROPDOWN_LIST("dropdown"),
 
     ;
