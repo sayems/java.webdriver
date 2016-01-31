@@ -22,13 +22,18 @@ public class HomePage {
                 .findAny().get().click();
     }
 
-    public DropdownPage dropdown(){
+    public DropdownPage dropdown() {
         availableExamples("Dropdown");
         return TestBase.pageFactory(DropdownPage.class);
     }
 
-    public CheckboxPage checkboxes(){
+    public CheckboxPage checkboxes() {
         availableExamples("Checkboxes");
         return TestBase.pageFactory(CheckboxPage.class);
+    }
+
+    public DragAndDropPage dragAndDrop() {
+        availableExamples("Drag and Drop");
+        return TestBase.pageFactory(DragAndDropPage.class);
     }
 }
