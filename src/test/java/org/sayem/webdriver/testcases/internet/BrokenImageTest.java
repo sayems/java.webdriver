@@ -16,12 +16,4 @@ public class BrokenImageTest extends TestBase{
         page.brokenImage()
                 .brokenImage();
     }
-
-    @Test
-    public void brokenImagesTest(){
-        System.setProperty("seleniumUrl", "http://the-internet.herokuapp.com/");
-        HomePage page = pageFactory(HomePage.class);
-        page.brokenImage()
-                .brokenImages();
-    }
 }
