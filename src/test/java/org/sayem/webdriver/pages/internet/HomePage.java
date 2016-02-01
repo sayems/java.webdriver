@@ -36,4 +36,9 @@ public class HomePage {
         availableExamples("Drag and Drop");
         return TestBase.pageFactory(DragAndDropPage.class);
     }
+
+    public BrokenImagePage brokenImage() {
+        availableExamples("Broken Images");
+        return TestBase.pageFactory(BrokenImagePage.class);
+    }
 }

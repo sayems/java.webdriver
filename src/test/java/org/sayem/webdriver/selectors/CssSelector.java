@@ -15,7 +15,7 @@ public enum CssSelector implements Supplier<By> {
 
     AVAILABLE_EXAMPLES("#content>ul>li>a"),
     CHECKBOX("#checkboxes > input:nth-of-type(1)"),
-
+    BROKEN_IMAGE(".example>img"),
     ;
 
     private final By by;
