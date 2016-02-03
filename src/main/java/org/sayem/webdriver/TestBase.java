@@ -4,6 +4,7 @@ import net.lightbody.bmp.BrowserMobProxy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.sayem.webdriver.browsers.config.BrowserThreads;
+import org.sayem.webdriver.listeners.RetryListener;
 import org.sayem.webdriver.listeners.ScreenshotListener;
 import org.sayem.webdriver.properties.PropertiesUtil;
 import org.sayem.webdriver.properties.Repository;
@@ -19,7 +20,7 @@ import java.util.List;
 /**
  * Created by sayem on 10/05/15.
  */
-@Listeners({ScreenshotListener.class})
+@Listeners({ScreenshotListener.class, RetryListener.class})
 public abstract class TestBase {
 
     private static List<BrowserThreads> webDriverThreadPool = Collections.synchronizedList(new ArrayList<>());
