@@ -19,7 +19,9 @@ import java.util.stream.Collectors;
 public class MultiSelect extends DelegatingWebDriver
         implements ExplicitWait, SearchScope {
 
-    public MultiSelect(WebDriver delegate) {
+    private static final String VALUE = "value";
+
+	public MultiSelect(WebDriver delegate) {
         super(delegate);
     }
 
@@ -141,7 +143,7 @@ public class MultiSelect extends DelegatingWebDriver
 
     public String getFirstSelectedValue(Supplier<By> by) {
         try {
-            return new Select(findElement(by)).getFirstSelectedOption().getAttribute("value");
+            return new Select(findElement(by)).getFirstSelectedOption().getAttribute(VALUE);
         } catch (NoSuchElementException e) {
             return null;
         }
@@ -150,7 +152,7 @@ public class MultiSelect extends DelegatingWebDriver
     public List<String> getAllSelectedValues(Supplier<By> by) {
         return new Select(findElement(by)).getAllSelectedOptions()
                 .stream()
-                .map(option -> option.getAttribute("value"))
+                .map(option -> option.getAttribute(VALUE))
                 .collect(Collectors.toList());
     }
 
@@ -183,7 +185,7 @@ public class MultiSelect extends DelegatingWebDriver
     public List<String> getAllValues(Supplier<By> by) {
         return new Select(findElement(by)).getOptions()
                 .stream()
-                .map(option -> option.getAttribute("value"))
+                .map(option -> option.getAttribute(VALUE))
                 .collect(Collectors.toList());
     }
 

@@ -19,7 +19,9 @@ import static org.slf4j.LoggerFactory.getLogger;
 public class JavascriptActions extends DelegatingWebDriver
         implements ExplicitWait, SearchScope, JavascriptExecutor {
 
-    public static final String NO_JQUERY_ERROR = "ReferenceError: $ is not defined";
+    private static final String J_QUERY_IS_NOT_DEFINED = "JQuery is not defined";
+	private static final String JS_ERROR = "JSError";
+	public static final String NO_JQUERY_ERROR = "ReferenceError: $ is not defined";
     Logger logger = getLogger(JavascriptActions.class);
     private WebDriver webDriver;
 
@@ -97,7 +99,7 @@ public class JavascriptActions extends DelegatingWebDriver
                     webDriver.findElement(elementBy));
         } catch (WebDriverException e) {
             if (e.getMessage().contains(NO_JQUERY_ERROR)) {
-                logger.info("JSError", "JQuery is not defined", false);
+                logger.info(JS_ERROR, J_QUERY_IS_NOT_DEFINED, false);
             }
         }
     }
@@ -111,7 +113,7 @@ public class JavascriptActions extends DelegatingWebDriver
             );
         } catch (WebDriverException e) {
             if (e.getMessage().contains(NO_JQUERY_ERROR)) {
-                logger.info("JSError", "JQuery is not defined", false);
+                logger.info(JS_ERROR, J_QUERY_IS_NOT_DEFINED, false);
             }
         }
     }
@@ -126,7 +128,7 @@ public class JavascriptActions extends DelegatingWebDriver
             );
         } catch (WebDriverException e) {
             if (e.getMessage().contains(NO_JQUERY_ERROR)) {
-                logger.info("JSError", "JQuery is not defined", false);
+                logger.info(JS_ERROR, J_QUERY_IS_NOT_DEFINED, false);
             }
         }
     }
