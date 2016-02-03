@@ -13,7 +13,6 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 import static org.sayem.webdriver.TestBase.driver;
-
 import static org.slf4j.LoggerFactory.getLogger;
 
 /**

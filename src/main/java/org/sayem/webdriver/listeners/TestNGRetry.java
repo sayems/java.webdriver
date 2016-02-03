@@ -2,10 +2,9 @@ package org.sayem.webdriver.listeners;
 
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
+import org.slf4j.Logger;
 
 import static org.slf4j.LoggerFactory.getLogger;
-
-import org.slf4j.Logger;
 
 /**
  * Created by sayem on 2/2/16.
