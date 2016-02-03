@@ -48,7 +48,6 @@ public class ScreenshotListener extends TestListenerAdapter {
             screenshotStream.close();
         } catch (IOException unableToWriteScreenshot) {
             log.error("Unable to write " + screenshot.getAbsolutePath(), unableToWriteScreenshot);
-            unableToWriteScreenshot.printStackTrace();
         }
     }
 
@@ -71,7 +70,6 @@ public class ScreenshotListener extends TestListenerAdapter {
             }
         } catch (Exception ex) {
             log.error("Unable to capture screenshot...", ex);
-            ex.printStackTrace();
         }
     }
 }

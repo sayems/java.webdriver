@@ -20,7 +20,6 @@ import java.net.URL;
 import static org.openqa.selenium.Proxy.ProxyType.MANUAL;
 import static org.sayem.webdriver.browsers.config.BrowserType.FIREFOX;
 import static org.sayem.webdriver.browsers.config.BrowserType.valueOf;
-
 import static org.slf4j.LoggerFactory.getLogger;
 
 /**
