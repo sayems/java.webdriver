@@ -11,6 +11,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.sayem.webdriver.TestBase;
 import org.sayem.webdriver.properties.Repository;
+import org.slf4j.Logger;
 
 import java.net.InetSocketAddress;
 import java.net.MalformedURLException;
@@ -20,11 +21,14 @@ import static org.openqa.selenium.Proxy.ProxyType.MANUAL;
 import static org.sayem.webdriver.browsers.config.BrowserType.FIREFOX;
 import static org.sayem.webdriver.browsers.config.BrowserType.valueOf;
 
+import static org.slf4j.LoggerFactory.getLogger;
+
 /**
  * Created by sayem on 10/05/15.
  */
 public class BrowserThreads {
 
+    private static final Logger log = getLogger(BrowserThreads.class);
     private final String defaultUrl = System.getProperty("seleniumUrl");
     private final BrowserType defaultBrowserType = getBrowser();
     private final String browser = System.getProperty("browser", defaultBrowserType.toString()).toUpperCase();
@@ -97,19 +101,19 @@ public class BrowserThreads {
         try {
             driverType = valueOf(browser);
         } catch (IllegalArgumentException ignored) {
-            System.err.println("Unknown driver specified, defaulting to '" + driverType + "'...");
+            log.error("Unknown driver specified, defaulting to '" + driverType + "'...");
         } catch (NullPointerException ignored) {
-            System.err.println("No driver specified, defaulting to '" + driverType + "'...");
+            log.error("No driver specified, defaulting to '" + driverType + "'...");
         }
         selectedDriverType = driverType;
     }
 
     private void instantiateWebDriver(DesiredCapabilities desiredCapabilities) {
-        System.out.println(" ");
-        System.out.println("Current Operating System: " + operatingSystem);
-        System.out.println("Current Architecture: " + systemArchitecture);
-        System.out.println("Current Browser Selection: " + selectedDriverType);
-        System.out.println(" ");
+        log.info(" ");
+        log.info("Current Operating System: " + operatingSystem);
+        log.info("Current Architecture: " + systemArchitecture);
+        log.info("Current Browser Selection: " + selectedDriverType);
+        log.info(" ");
 
         if (useRemoteWebDriver) {
             URL seleniumGridURL = null;
@@ -139,7 +143,7 @@ public class BrowserThreads {
 
     private void setup() {
         if (defaultUrl.isEmpty()) {
-            System.err.println("No URL specified, defaulting to: " + defaultUrl + "'...");
+            log.error("No URL specified, defaulting to: " + defaultUrl + "'...");
             webdriver.navigate().to(TestBase.getProperties(Repository.URL));
         }else {
             webdriver.navigate().to(defaultUrl);
@@ -151,9 +155,9 @@ public class BrowserThreads {
         try {
             browserType = valueOf(TestBase.getProperties(Repository.BROWSER).toUpperCase());
         } catch (IllegalArgumentException ignored) {
-            System.err.println("Unknown driver specified, defaulting to '" + browserType + "'...");
+            log.error("Unknown driver specified, defaulting to '" + browserType + "'...");
         } catch (NullPointerException ignored) {
-            System.err.println("No driver specified in property, defaulting to '" + browserType + "'...");
+            log.error("No driver specified in property, defaulting to '" + browserType + "'...");
         }
         return browserType;
     }

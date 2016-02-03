@@ -3,10 +3,15 @@ package org.sayem.webdriver.listeners;
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
 
+import static org.slf4j.LoggerFactory.getLogger;
+
+import org.slf4j.Logger;
+
 /**
  * Created by sayem on 2/2/16.
  */
 public class TestNGRetry implements IRetryAnalyzer {
+    private static final Logger log = getLogger(TestNGRetry.class);
     private int retryCount = 0;
     private int maxRetryCount = 1;
 
@@ -14,7 +19,7 @@ public class TestNGRetry implements IRetryAnalyzer {
     // and it takes the 'Result' as parameter of the test method that just ran
     public boolean retry(ITestResult result) {
         if (retryCount < maxRetryCount) {
-            System.out.println("Retrying test " + result.getName() + " with status "
+            log.info("Retrying test " + result.getName() + " with status "
                     + getResultStatusName(result.getStatus()) + " for the " + (retryCount+1) + " time(s).");
             retryCount++;
             return true;
