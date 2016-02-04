@@ -11,6 +11,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.sayem.webdriver.TestBase;
 import org.sayem.webdriver.properties.Repository;
+import org.slf4j.Logger;
 
 import java.net.InetSocketAddress;
 import java.net.MalformedURLException;
@@ -19,12 +20,14 @@ import java.net.URL;
 import static org.openqa.selenium.Proxy.ProxyType.MANUAL;
 import static org.sayem.webdriver.browsers.config.BrowserType.FIREFOX;
 import static org.sayem.webdriver.browsers.config.BrowserType.valueOf;
+import static org.slf4j.LoggerFactory.getLogger;
 
 /**
  * Created by sayem on 10/05/15.
  */
 public class BrowserThreads {
 
+    private static final Logger log = getLogger(BrowserThreads.class);
     private final String defaultUrl = System.getProperty("seleniumUrl");
     private final BrowserType defaultBrowserType = getBrowser();
     private final String browser = System.getProperty("browser", defaultBrowserType.toString()).toUpperCase();
@@ -116,7 +119,7 @@ public class BrowserThreads {
             try {
                 seleniumGridURL = new URL(System.getProperty("gridURL"));
             } catch (MalformedURLException e) {
-                e.printStackTrace();
+                log.error("Either no legal protocol could be found or the string could not be parsed.", e);
             }
             String desiredBrowserVersion = System.getProperty("desiredBrowserVersion");
             String desiredPlatform = System.getProperty("desiredPlatform");

@@ -1,14 +1,19 @@
 package org.sayem.webdriver.properties;
 
+import static org.slf4j.LoggerFactory.getLogger;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Properties;
 
+import org.slf4j.Logger;
+
 /**
  * Created by sayem on 12/28/15.
  */
 public class PropertiesUtil {
+    private static final Logger log = getLogger(PropertiesUtil.class);
     private String dataLocation;
     private Properties properties;
 
@@ -44,7 +49,7 @@ public class PropertiesUtil {
             properties = new Properties();
             properties.load(fileInputStream);
         } catch (IOException e) {
-            e.printStackTrace();
+            log.error("failed or interrupted I/O operations", e);;
         }
     }
 
@@ -55,7 +60,7 @@ public class PropertiesUtil {
             prop = properties.getProperty(name);
 
         } catch (Exception e) {
-            e.printStackTrace();
+            log.error("Exception while execution", e);
         }
         return prop;
     }
@@ -68,7 +73,7 @@ public class PropertiesUtil {
             prop = valueOf(type, temp);
 
         } catch (Exception e) {
-            e.printStackTrace();
+            log.error("Exception while execution", e);
         }
         return prop;
     }

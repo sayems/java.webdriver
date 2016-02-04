@@ -120,7 +120,7 @@ public class Browser extends DelegatingWebDriver
         try {
             Thread.sleep(millis);
         } catch (InterruptedException e) {
-            e.printStackTrace();
+            log.error("Thread has been interrupted", e);
         }
     }
 

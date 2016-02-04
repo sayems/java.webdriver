@@ -4,6 +4,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.Augmenter;
+import org.slf4j.Logger;
 import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
 
@@ -12,11 +13,14 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 import static org.sayem.webdriver.TestBase.driver;
+import static org.slf4j.LoggerFactory.getLogger;
 
 /**
  * Created by sayem on 10/05/15.
  */
 public class ScreenshotListener extends TestListenerAdapter {
+
+    private static final Logger log = getLogger(ScreenshotListener.class);
 
     private boolean createFile(File screenshot) {
         boolean fileCreated = false;
@@ -29,7 +33,7 @@ public class ScreenshotListener extends TestListenerAdapter {
                 try {
                     fileCreated = screenshot.createNewFile();
                 } catch (IOException errorCreatingScreenshot) {
-                    errorCreatingScreenshot.printStackTrace();
+                    log.error("failed or interrupted I/O operations", errorCreatingScreenshot);
                 }
             }
         }

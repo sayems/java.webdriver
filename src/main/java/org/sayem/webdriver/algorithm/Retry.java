@@ -2,12 +2,17 @@ package org.sayem.webdriver.algorithm;
 
 import java.util.concurrent.TimeUnit;
 
+import org.slf4j.Logger;
+
+import static org.slf4j.LoggerFactory.getLogger;
+
 /**
  * Created by sayem on 10/05/15.
  */
 @SuppressWarnings("Duplicates")
 public class Retry {
 
+    private static final Logger log = getLogger(Retry.class);
     private final long interval;
     private final TimeUnit unit;
     private boolean on;
@@ -76,7 +81,7 @@ public class Retry {
             return attempt;
         } catch (Exception e) {
             on();
-            e.printStackTrace();
+            log.error("Exception while execution", e);
             if (count == 0) {
                 throw e;
             }
@@ -92,7 +97,7 @@ public class Retry {
         try {
             unit.sleep(interval);
         } catch (InterruptedException e) {
-            e.printStackTrace();
+            log.error("Thread has been interrupted", e);
         }
     }
 
