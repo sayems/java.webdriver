@@ -21,7 +21,8 @@ import static org.slf4j.LoggerFactory.getLogger;
 public class Browser extends DelegatingWebDriver
         implements ExplicitWait, SearchScope {
 
-    public static final Logger log = getLogger(Browser.class);
+    private static final String VALUE2 = "value";
+	public static final Logger log = getLogger(Browser.class);
     private Action action;
     private JavascriptActions javascript;
     private MultiSelect select;
@@ -68,13 +69,13 @@ public class Browser extends DelegatingWebDriver
                     Element element = findElement(by);
                     element.clear();
                     element.sendKeys(value);
-                    assert value.equals(element.getAttribute("value"));
+                    assert value.equals(element.getAttribute(VALUE2));
                 }
         );
     }
 
     public String getInputText(Supplier<By> by) {
-        return untilFound(by).getAttribute("value");
+        return untilFound(by).getAttribute(VALUE2);
     }
 
     public void setCheckboxValue(Supplier<By> by, boolean value) {
@@ -94,7 +95,7 @@ public class Browser extends DelegatingWebDriver
         assert radiobuttons.size() >= 2;
 
         for (WebElement e : radiobuttons) {
-            if (e.getAttribute("value").equals(value)) {
+            if (e.getAttribute(VALUE2).equals(value)) {
                 e.click();
                 return;
             }
@@ -110,7 +111,7 @@ public class Browser extends DelegatingWebDriver
 
         for (WebElement e : radiobuttons) {
             if (Boolean.valueOf(e.getAttribute("checked"))) {
-                return e.getAttribute("value");
+                return e.getAttribute(VALUE2);
             }
         }
         return null;
