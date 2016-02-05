@@ -33,7 +33,7 @@ public class ScreenshotListener extends TestListenerAdapter {
                 try {
                     fileCreated = screenshot.createNewFile();
                 } catch (IOException errorCreatingScreenshot) {
-                    errorCreatingScreenshot.printStackTrace();
+                    log.error("failed or interrupted I/O operations", errorCreatingScreenshot);
                 }
             }
         }

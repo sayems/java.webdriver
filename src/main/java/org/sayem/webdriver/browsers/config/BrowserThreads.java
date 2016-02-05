@@ -119,7 +119,7 @@ public class BrowserThreads {
             try {
                 seleniumGridURL = new URL(System.getProperty("gridURL"));
             } catch (MalformedURLException e) {
-                e.printStackTrace();
+                log.error("Either no legal protocol could be found or the string could not be parsed.", e);
             }
             String desiredBrowserVersion = System.getProperty("desiredBrowserVersion");
             String desiredPlatform = System.getProperty("desiredPlatform");
