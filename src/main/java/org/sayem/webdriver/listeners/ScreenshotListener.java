@@ -4,6 +4,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.Augmenter;
+import org.slf4j.Logger;
 import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
 
@@ -12,11 +13,14 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 import static org.sayem.webdriver.TestBase.driver;
+import static org.slf4j.LoggerFactory.getLogger;
 
 /**
  * Created by sayem on 10/05/15.
  */
 public class ScreenshotListener extends TestListenerAdapter {
+
+    private static final Logger log = getLogger(ScreenshotListener.class);
 
     private boolean createFile(File screenshot) {
         boolean fileCreated = false;
@@ -43,8 +47,7 @@ public class ScreenshotListener extends TestListenerAdapter {
             screenshotStream.write(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES));
             screenshotStream.close();
         } catch (IOException unableToWriteScreenshot) {
-            System.err.println("Unable to write " + screenshot.getAbsolutePath());
-            unableToWriteScreenshot.printStackTrace();
+            log.error("Unable to write " + screenshot.getAbsolutePath(), unableToWriteScreenshot);
         }
     }
 
@@ -61,13 +64,12 @@ public class ScreenshotListener extends TestListenerAdapter {
                 } catch (ClassCastException weNeedToAugmentOurDriverObject) {
                     writeScreenshotToFile(new Augmenter().augment(driver), screenshot);
                 }
-                System.out.println("Written screenshot to " + screenshotAbsolutePath);
+                log.info("Written screenshot to " + screenshotAbsolutePath);
             } else {
-                System.err.println("Unable to create " + screenshotAbsolutePath);
+                log.error("Unable to create " + screenshotAbsolutePath);
             }
         } catch (Exception ex) {
-            System.err.println("Unable to capture screenshot...");
-            ex.printStackTrace();
+            log.error("Unable to capture screenshot...", ex);
         }
     }
 }
