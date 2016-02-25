@@ -2,9 +2,7 @@ Selenium WebDriver
 =======
 
 This repository contains WebDriver code examples, exercises and tutorials for developers.
-
 Over time, more and more test example will be uploaded here.
-
 All tests examples in this repository is to be considered public domain unless stated otherwise.  
 
 ## Demo website to practice WebDriver:
