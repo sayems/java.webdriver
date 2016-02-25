@@ -1,8 +1,13 @@
 package org.sayem.webdriver.testcases.internet;
 
 import org.sayem.webdriver.TestBase;
+import org.sayem.webdriver.annotations.Browser;
+import org.sayem.webdriver.annotations.WebSite;
 import org.sayem.webdriver.pages.internet.HomePage;
 import org.testng.annotations.Test;
+
+import static org.sayem.webdriver.Repository.CHROME;
+import static org.sayem.webdriver.Repository.THE_INTERNET;
 
 /**
  * Created by sayem on 1/31/16.
@@ -21,8 +26,9 @@ public class DropdownTest extends TestBase{
      */
 
     @Test
+    @Browser(browser = CHROME)
+    @WebSite(value = THE_INTERNET)
     public void dropdownTest(){
-        System.setProperty("seleniumUrl", "http://the-internet.herokuapp.com/");
         HomePage page = pageFactory(HomePage.class);
         page.dropdown()
                 .selectDropDown();

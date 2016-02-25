@@ -10,7 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.sayem.webdriver.TestBase;
-import org.sayem.webdriver.properties.Repository;
+import org.sayem.webdriver.Repository;
 import org.slf4j.Logger;
 
 import java.net.InetSocketAddress;
@@ -141,10 +141,11 @@ public class BrowserThreads {
     }
 
     private void setup() {
-        if (defaultUrl.isEmpty()) {
-            log.error("No URL specified, defaulting to: " + defaultUrl + "'...");
-            webdriver.navigate().to(TestBase.getProperties(Repository.URL));
-        }else {
+        String url = TestBase.getProperties(Repository.URL);
+        if (defaultUrl == null) {
+            System.out.println("No URL specified, defaulting to properties file url: " + url + "'...");
+            webdriver.navigate().to(url);
+        } else {
             webdriver.navigate().to(defaultUrl);
         }
     }

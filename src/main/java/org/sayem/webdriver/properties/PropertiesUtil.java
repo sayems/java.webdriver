@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Properties;
 
+import org.sayem.webdriver.Repository;
 import org.slf4j.Logger;
 
 /**
