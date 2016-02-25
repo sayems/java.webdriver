@@ -2,7 +2,8 @@ package org.sayem.webdriver.testcases.internet;
 
 import org.sayem.webdriver.TestBase;
 import org.sayem.webdriver.annotations.Browser;
-import org.sayem.webdriver.annotations.WebSite;
+import org.sayem.webdriver.annotations.Chrome;
+import org.sayem.webdriver.annotations.Url;
 import org.sayem.webdriver.pages.internet.HomePage;
 import org.testng.annotations.Test;
 
@@ -21,8 +22,8 @@ public class CheckboxTest extends TestBase{
      * mvn clean install -Dbrowser=phantomjs
      */
 
-    @Browser(browser = CHROME)
-    @WebSite(value = THE_INTERNET)
+    @Chrome
+    @Url(value = THE_INTERNET)
     @Test
     public void checkboxTest(){
         HomePage page = pageFactory(HomePage.class);

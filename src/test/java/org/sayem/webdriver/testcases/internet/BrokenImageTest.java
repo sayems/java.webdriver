@@ -1,8 +1,10 @@
 package org.sayem.webdriver.testcases.internet;
 
 import org.sayem.webdriver.TestBase;
-import org.sayem.webdriver.annotations.Browser;
-import org.sayem.webdriver.annotations.WebSite;
+import org.sayem.webdriver.annotations.Chrome;
+import org.sayem.webdriver.annotations.Firefox;
+import org.sayem.webdriver.annotations.Safari;
+import org.sayem.webdriver.annotations.Url;
 import org.sayem.webdriver.pages.internet.HomePage;
 import org.testng.annotations.Test;
 
@@ -13,8 +15,8 @@ import static org.sayem.webdriver.Repository.*;
  */
 public class BrokenImageTest extends TestBase{
 
-    @Browser(browser = FIREFOX)
-    @WebSite(value = THE_INTERNET)
+    @Safari
+    @Url(value = THE_INTERNET)
     @Test
     public void brokenImageTest(){
         HomePage page = pageFactory(HomePage.class);

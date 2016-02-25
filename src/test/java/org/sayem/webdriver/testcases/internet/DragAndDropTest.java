@@ -2,7 +2,9 @@ package org.sayem.webdriver.testcases.internet;
 
 import org.sayem.webdriver.TestBase;
 import org.sayem.webdriver.annotations.Browser;
-import org.sayem.webdriver.annotations.WebSite;
+import org.sayem.webdriver.annotations.Chrome;
+import org.sayem.webdriver.annotations.Safari;
+import org.sayem.webdriver.annotations.Url;
 import org.sayem.webdriver.pages.internet.HomePage;
 import org.testng.annotations.Test;
 
@@ -14,8 +16,8 @@ import static org.sayem.webdriver.Repository.*;
 public class DragAndDropTest extends TestBase{
 
     @Test
-    @Browser(browser = CHROME)
-    @WebSite(value = THE_INTERNET)
+    @Chrome
+    @Url(value = THE_INTERNET)
     public void checkboxTest(){
         HomePage page = pageFactory(HomePage.class);
         page.dragAndDrop()

@@ -7,13 +7,14 @@ import java.lang.annotation.Target;
 
 import static java.lang.annotation.ElementType.METHOD;
 import static java.lang.annotation.RetentionPolicy.RUNTIME;
-import static org.sayem.webdriver.Repository.*;
+import static org.sayem.webdriver.Repository.SAFARI;
 
 /**
  * Created by sayem on 2/24/16.
  */
 @Retention(RUNTIME)
 @Target({METHOD})
-public @interface WebSite {
-    Repository value() default MADISON_ISLAND;
+public @interface Safari {
+    Repository browser() default SAFARI;
 }
+

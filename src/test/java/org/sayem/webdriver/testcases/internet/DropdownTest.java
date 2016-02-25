@@ -2,7 +2,8 @@ package org.sayem.webdriver.testcases.internet;
 
 import org.sayem.webdriver.TestBase;
 import org.sayem.webdriver.annotations.Browser;
-import org.sayem.webdriver.annotations.WebSite;
+import org.sayem.webdriver.annotations.Firefox;
+import org.sayem.webdriver.annotations.Url;
 import org.sayem.webdriver.pages.internet.HomePage;
 import org.testng.annotations.Test;
 
@@ -26,8 +27,8 @@ public class DropdownTest extends TestBase{
      */
 
     @Test
-    @Browser(browser = CHROME)
-    @WebSite(value = THE_INTERNET)
+    @Firefox
+    @Url(value = THE_INTERNET)
     public void dropdownTest(){
         HomePage page = pageFactory(HomePage.class);
         page.dropdown()
