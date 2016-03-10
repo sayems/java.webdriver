@@ -10,13 +10,14 @@ import java.lang.annotation.Annotation;
  */
 public class TestNGListener implements IInvokedMethodListener2 {
 
+    private static final String BROWSER = "browser";
+    private static final String SELENIUM_URL = "seleniumUrl";
     private String environment;
     private String browser;
     private String chrome;
     private String ie;
     private String firefox;
     private String safari;
-
 
     @Override
     public void beforeInvocation(IInvokedMethod method, ITestResult testResult, ITestContext context) {
@@ -50,29 +51,29 @@ public class TestNGListener implements IInvokedMethodListener2 {
         }
 
         if (method.isTestMethod() && annotationPresent(method, Url.class) &&
-                method.isTestMethod() && annotationPresent(method, Browser.class)) {
-            System.setProperty("seleniumUrl", environment);
-            System.setProperty("browser", browser);
+                annotationPresent(method, Browser.class)) {
+            System.setProperty(SELENIUM_URL, environment);
+            System.setProperty(BROWSER, browser);
         } else if (method.isTestMethod() && annotationPresent(method, Url.class) &&
-                method.isTestMethod() && annotationPresent(method, Chrome.class)) {
-            System.setProperty("seleniumUrl", environment);
-            System.setProperty("browser", chrome);
+                annotationPresent(method, Chrome.class)) {
+            System.setProperty(SELENIUM_URL, environment);
+            System.setProperty(BROWSER, chrome);
         } else if (method.isTestMethod() && annotationPresent(method, Url.class) &&
-                method.isTestMethod() && annotationPresent(method, Firefox.class)) {
-            System.setProperty("seleniumUrl", environment);
-            System.setProperty("browser", firefox);
+                annotationPresent(method, Firefox.class)) {
+            System.setProperty(SELENIUM_URL, environment);
+            System.setProperty(BROWSER, firefox);
         } else if (method.isTestMethod() && annotationPresent(method, Url.class) &&
-                method.isTestMethod() && annotationPresent(method, Safari.class)) {
-            System.setProperty("seleniumUrl", environment);
-            System.setProperty("browser", safari);
+                annotationPresent(method, Safari.class)) {
+            System.setProperty(SELENIUM_URL, environment);
+            System.setProperty(BROWSER, safari);
         } else if (method.isTestMethod() && annotationPresent(method, Url.class) &&
-                method.isTestMethod() && annotationPresent(method, InternetExplorer.class)) {
-            System.setProperty("seleniumUrl", environment);
-            System.setProperty("browser", ie);
+                annotationPresent(method, InternetExplorer.class)) {
+            System.setProperty(SELENIUM_URL, environment);
+            System.setProperty(BROWSER, ie);
         } else if (method.isTestMethod() && annotationPresent(method, Url.class)) {
-            System.setProperty("seleniumUrl", environment);
+            System.setProperty(SELENIUM_URL, environment);
         } else if (method.isTestMethod() && annotationPresent(method, Browser.class)) {
-            System.setProperty("browser", browser);
+            System.setProperty(BROWSER, browser);
         }
     }
 
@@ -91,7 +92,7 @@ public class TestNGListener implements IInvokedMethodListener2 {
         // TODO Auto-generated method stub
     }
 
-    private boolean annotationPresent(IInvokedMethod method, Class<? extends Annotation> clazz) {
+    private static boolean annotationPresent(IInvokedMethod method, Class<? extends Annotation> clazz) {
         return method.getTestMethod().getConstructorOrMethod().getMethod().isAnnotationPresent(clazz);
     }
 }
