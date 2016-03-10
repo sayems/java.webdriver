@@ -22,7 +22,7 @@ public class ScreenshotListener extends TestListenerAdapter {
 
     private static final Logger log = getLogger(ScreenshotListener.class);
 
-    private boolean createFile(File screenshot) {
+    private static boolean createFile(File screenshot) {
         boolean fileCreated = false;
 
         if (screenshot.exists()) {

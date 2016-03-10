@@ -22,7 +22,7 @@ public class Browser extends DelegatingWebDriver
         implements ExplicitWait, SearchScope {
 
     private static final String VALUE2 = "value";
-	public static final Logger log = getLogger(Browser.class);
+    public static final Logger log = getLogger(Browser.class);
     private Action action;
     private JavascriptActions javascript;
     private MultiSelect select;
