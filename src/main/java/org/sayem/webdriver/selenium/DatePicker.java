@@ -11,7 +11,7 @@ public class DatePicker {
 
     private static final String M_D_YYYY = "M/d/yyyy";
 
-	public String todayDate() {
+    public String todayDate() {
         LocalDate date = LocalDate.now();
         return date.format(DateTimeFormatter.ofPattern(M_D_YYYY));
     }
