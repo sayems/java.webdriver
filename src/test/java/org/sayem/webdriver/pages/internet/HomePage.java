@@ -5,6 +5,8 @@ import org.sayem.webdriver.TestBase;
 import org.sayem.webdriver.selectors.CssSelector;
 import org.sayem.webdriver.selenium.Browser;
 
+import static org.sayem.webdriver.selectors.CssSelector.*;
+
 /**
  * Created by sayem on 1/30/16.
  */
@@ -18,7 +20,7 @@ public class HomePage {
     }
 
     private void availableExamples(String example) {
-        browser.findElements(CssSelector.AVAILABLE_EXAMPLES)
+        browser.findElements(AVAILABLE_EXAMPLES)
                 .filter((s) -> s.getText().equals(example))
                 .findAny().get().click();
     }
