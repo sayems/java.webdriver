@@ -20,9 +20,7 @@ import java.util.List;
 /**
  * Created by sayem on 10/05/15.
  */
-@Listeners({TestNGListener.class,
-        ScreenshotListener.class,
-        RetryListener.class})
+@Listeners({TestNGListener.class, ScreenshotListener.class, RetryListener.class})
 public abstract class TestBase {
 
     private static List<BrowserThreads> webDriverThreadPool = Collections.synchronizedList(new ArrayList<>());

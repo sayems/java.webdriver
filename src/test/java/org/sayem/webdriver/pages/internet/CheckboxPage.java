@@ -16,7 +16,7 @@ public class CheckboxPage {
         this.browser = new Browser(driver);
     }
 
-    public CheckboxPage selectCheckbox(){
+    public CheckboxPage selectCheckbox() {
         browser.setCheckboxValue(CssSelector.CHECKBOX, true);
         Assert.assertTrue(browser.isChecked(CssSelector.CHECKBOX));
         return this;

@@ -13,9 +13,7 @@ import static org.openqa.selenium.By.id;
 public enum Id implements Supplier<By> {
     DROPDOWN_LIST("dropdown"),
     DRAG("column-a"),
-    DROP("column-b"),
-
-    ;
+    DROP("column-b"),;
     private final By by;
 
     Id(String id) {

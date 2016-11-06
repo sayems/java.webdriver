@@ -21,7 +21,7 @@ public class MultiSelect extends DelegatingWebDriver
 
     private static final String VALUE = "value";
 
-	public MultiSelect(WebDriver delegate) {
+    public MultiSelect(WebDriver delegate) {
         super(delegate);
     }
 

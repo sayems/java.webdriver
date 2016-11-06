@@ -21,8 +21,8 @@ import static org.slf4j.LoggerFactory.getLogger;
 public class Browser extends DelegatingWebDriver
         implements ExplicitWait, SearchScope {
 
-    private static final String VALUE2 = "value";
     public static final Logger log = getLogger(Browser.class);
+    private static final String VALUE2 = "value";
     private Action action;
     private JavascriptActions javascript;
     private MultiSelect select;

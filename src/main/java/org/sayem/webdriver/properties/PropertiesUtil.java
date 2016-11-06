@@ -1,14 +1,14 @@
 package org.sayem.webdriver.properties;
 
-import static org.slf4j.LoggerFactory.getLogger;
+import org.sayem.webdriver.Repository;
+import org.slf4j.Logger;
 
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Properties;
 
-import org.sayem.webdriver.Repository;
-import org.slf4j.Logger;
+import static org.slf4j.LoggerFactory.getLogger;
 
 /**
  * Created by sayem on 12/28/15.
@@ -50,7 +50,8 @@ public class PropertiesUtil {
             properties = new Properties();
             properties.load(fileInputStream);
         } catch (IOException e) {
-            log.error("failed or interrupted I/O operations", e);;
+            log.error("failed or interrupted I/O operations", e);
+            ;
         }
     }
 

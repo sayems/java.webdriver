@@ -1,8 +1,8 @@
 package org.sayem.webdriver.algorithm;
 
-import java.util.concurrent.TimeUnit;
-
 import org.slf4j.Logger;
+
+import java.util.concurrent.TimeUnit;
 
 import static org.slf4j.LoggerFactory.getLogger;
 
