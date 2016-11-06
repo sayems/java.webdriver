@@ -14,7 +14,7 @@ public class JQueryDemoPage {
         this.browser = new Browser(driver);
     }
 
-    public JQueryDemoPage draggable(){
+    public JQueryDemoPage draggable() {
 
         return this;
     }

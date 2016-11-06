@@ -14,6 +14,7 @@ public class HomePage {
 
     public HomePage(WebDriver driver) {
         this.browser = new Browser(driver);
+        browser.navigate().to("http://the-internet.herokuapp.com/");
     }
 
     private void availableExamples(String example) {

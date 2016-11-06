@@ -9,8 +9,8 @@ import org.openqa.selenium.Proxy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.sayem.webdriver.TestBase;
 import org.sayem.webdriver.Repository;
+import org.sayem.webdriver.TestBase;
 import org.slf4j.Logger;
 
 import java.net.InetSocketAddress;

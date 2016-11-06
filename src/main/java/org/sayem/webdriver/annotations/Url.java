@@ -7,7 +7,7 @@ import java.lang.annotation.Target;
 
 import static java.lang.annotation.ElementType.METHOD;
 import static java.lang.annotation.RetentionPolicy.RUNTIME;
-import static org.sayem.webdriver.Repository.*;
+import static org.sayem.webdriver.Repository.MADISON_ISLAND;
 
 /**
  * Created by sayem on 2/24/16.

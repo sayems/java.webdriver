@@ -16,7 +16,7 @@ public class DropdownPage {
         this.browser = new Browser(driver);
     }
 
-    public DropdownPage selectDropDown(){
+    public DropdownPage selectDropDown() {
         browser.untilFound(Id.DROPDOWN_LIST);
         browser.getSelect().selectByText(Id.DROPDOWN_LIST, "Option 1");
         Assert.assertEquals(browser.getSelect()

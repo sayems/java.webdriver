@@ -19,9 +19,9 @@ import static org.slf4j.LoggerFactory.getLogger;
 public class JavascriptActions extends DelegatingWebDriver
         implements ExplicitWait, SearchScope, JavascriptExecutor {
 
+    public static final String NO_JQUERY_ERROR = "ReferenceError: $ is not defined";
     private static final String J_QUERY_IS_NOT_DEFINED = "JQuery is not defined";
-	private static final String JS_ERROR = "JSError";
-	public static final String NO_JQUERY_ERROR = "ReferenceError: $ is not defined";
+    private static final String JS_ERROR = "JSError";
     Logger logger = getLogger(JavascriptActions.class);
     private WebDriver webDriver;
 
