@@ -5,6 +5,8 @@ import org.sayem.webdriver.selectors.CssSelector;
 import org.sayem.webdriver.selenium.Browser;
 import org.testng.Assert;
 
+import static org.sayem.webdriver.selectors.CssSelector.*;
+
 /**
  * Created by sayem on 1/30/16.
  */
@@ -17,8 +19,8 @@ public class CheckboxPage {
     }
 
     public CheckboxPage selectCheckbox() {
-        browser.setCheckboxValue(CssSelector.CHECKBOX, true);
-        Assert.assertTrue(browser.isChecked(CssSelector.CHECKBOX));
+        browser.setCheckboxValue(CHECKBOX, true);
+        Assert.assertTrue(browser.isChecked(CHECKBOX));
         return this;
     }
 }
