@@ -11,7 +11,8 @@ import static java.util.Objects.requireNonNull;
  */
 public enum BrowserType {
 
-    CHROME(ChromeBrowser::new);
+    CHROME(ChromeBrowser::new),
+    FIREFOX(FirefoxBrowser::new);
 
     public final Adapter<? extends WebDriver> browser;
 
