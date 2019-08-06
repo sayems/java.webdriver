@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 public class ChromeIT extends TestBase {
 
-    @Chrome
+    @Firefox
     @Test
     public void googleSearchTest(){
         new HomePage(getDriver())

@@ -14,9 +14,9 @@ public enum BrowserType {
     CHROME(ChromeBrowser::new),
     FIREFOX(FirefoxBrowser::new);
 
-    public final Adapter<? extends WebDriver> browser;
+    public final ThreadLocal<Adapter<? extends WebDriver>> driver = new ThreadLocal<>();
 
-    BrowserType(Supplier<Adapter<? extends WebDriver>> browser) {
-        this.browser = browser.get();
+    BrowserType(Supplier<Adapter<? extends WebDriver>> driver) {
+        this.driver.set(requireNonNull(driver).get());
     }
 }

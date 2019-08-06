@@ -6,8 +6,10 @@ import org.sayem.listener.BrowserListener;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Listeners;
 
-import static org.sayem.browser.BrowserType.CHROME;
-import static org.sayem.browser.BrowserType.FIREFOX;
+import java.util.stream.Stream;
+
+import static java.lang.String.valueOf;
+import static org.sayem.browser.BrowserType.values;
 
 @Listeners({BrowserListener.class})
 public class TestBase {
@@ -16,16 +18,16 @@ public class TestBase {
 
     @AfterMethod
     public void tearDown() {
-        browser.driver().quit();
+        browser.driver().close();
     }
 
     @SuppressWarnings("unchecked")
     protected <T> T getDriver() {
-        if (System.getProperty("browser").equalsIgnoreCase(String.valueOf(CHROME))) {
-            browser = CHROME.browser.get();
-        } else {
-            browser = FIREFOX.browser.get();
-        }
+        browser = Stream.of(values())
+                .parallel()
+                .filter(s -> s.name()
+                        .equalsIgnoreCase(System.getProperty("browser")))
+                .findFirst().get().driver.get().browser();
         return (T) browser;
     }
 }

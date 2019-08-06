@@ -10,5 +10,5 @@ import java.util.function.Supplier;
  */
 public interface Adapter<T extends WebDriver> {
 
-    Browser<T> get();
+    Browser<T> browser();
 }

@@ -1,11 +1,13 @@
 package org.sayem.browser;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class FirefoxBrowser implements Adapter<FirefoxDriver> {
 
     @Override
-    public Browser<FirefoxDriver> get() {
+    public Browser<FirefoxDriver> browser() {
+        WebDriverManager.firefoxdriver().setup();
         return new BrowserAdapter<>(new FirefoxDriver());
     }
 }
