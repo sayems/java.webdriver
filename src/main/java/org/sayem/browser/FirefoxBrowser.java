@@ -7,20 +7,19 @@ import com.smartbear.testleft.testobjects.web.WebBrowser;
 import com.smartbear.testleft.testobjects.web.WebPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
-import static com.smartbear.testleft.BrowserType.Chrome;
+import static com.smartbear.testleft.BrowserType.Firefox;
 
-public class ChromeBrowser implements WebAdapter<WebPage, WebDriver> {
+public class FirefoxBrowser implements WebAdapter<WebPage, WebDriver> {
 
     @Override
     public Browser<WebPage> webPage(String url) throws TestAgentRunException, RestConnectionRefused, HttpException, ApiException {
         WebBrowser browser = new LocalDriver()
                 .getApplications()
-                .runBrowser(Chrome,
-                        url);
+                .runBrowser(Firefox, url);
         WebPage page = browser.find(WebBrowser.class, new WebBrowserPattern() {{
-            ObjectIdentifier = Chrome.getValueString().toLowerCase();
+            ObjectIdentifier = Firefox.getValueString().toLowerCase();
         }}).find(WebPage.class, new WebPagePattern() {{
             URL = url;
         }});
@@ -30,6 +29,6 @@ public class ChromeBrowser implements WebAdapter<WebPage, WebDriver> {
     @Override
     public Browser<WebDriver> webDriver() {
         WebDriverManager.chromedriver().setup();
-        return new WebDriverAdapter(new ChromeDriver());
+        return new WebDriverAdapter(new FirefoxDriver());
     }
 }

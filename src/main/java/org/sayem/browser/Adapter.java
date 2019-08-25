@@ -1,13 +1,11 @@
 package org.sayem.browser;
 
-import com.smartbear.testleft.*;
-import com.smartbear.testleft.testobjects.web.WebPage;
-import org.openqa.selenium.WebDriver;
+import com.smartbear.testleft.ApiException;
+import com.smartbear.testleft.HttpException;
+import com.smartbear.testleft.RestConnectionRefused;
+import com.smartbear.testleft.TestAgentRunException;
+import com.smartbear.testleft.testobjects.TestObject;
 
-/**
- * Created by sayem on 08/02/17.
- */
-public interface Adapter {
-    Browser<WebPage> webPage(String url) throws TestAgentRunException, RestConnectionRefused, HttpException, ApiException;
-    Browser<WebDriver> webDriver();
+public interface Adapter<T extends TestObject> {
+    Browser<T> webPage(String var) throws TestAgentRunException, RestConnectionRefused, HttpException, ApiException;
 }

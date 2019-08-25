@@ -6,11 +6,12 @@ import static java.util.Objects.requireNonNull;
 
 public enum BrowserType {
 
-    CHROME(ChromeBrowser::new);
+    CHROME(ChromeBrowser::new),
+    FIREFOX(FirefoxBrowser::new);
 
-    public final ThreadLocal<Adapter> driver = new ThreadLocal<>();
+    public final ThreadLocal<WebAdapter> driver = new ThreadLocal<>();
 
-    BrowserType(Supplier<Adapter> driver) {
+    BrowserType(Supplier<WebAdapter> driver) {
         this.driver.set(requireNonNull(driver).get());
     }
 }
