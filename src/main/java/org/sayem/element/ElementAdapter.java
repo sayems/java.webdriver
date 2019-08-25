@@ -3,7 +3,7 @@ package org.sayem.element;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.sayem.browser.SeleniumAdapter;
+import org.sayem.browser.BrowserAdapter;
 
 import java.util.List;
 
@@ -14,7 +14,7 @@ public class ElementAdapter<T extends WebDriver> implements Element {
 
     private T driver;
 
-    public ElementAdapter(SeleniumAdapter<T> driver) {
+    public ElementAdapter(BrowserAdapter<T> driver) {
         this.driver = driver.driver();
     }
 

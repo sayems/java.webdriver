@@ -1,17 +1,18 @@
 package org.sayem.webdriver.pages;
 
 import org.openqa.selenium.WebDriver;
+import org.sayem.browser.Browser;
 
 public class HomePage {
 
-    private WebDriver browser;
+    private Browser<WebDriver> browser;
 
-    public HomePage(WebDriver browser) {
+    public HomePage(Browser<WebDriver> browser) {
         this.browser = browser;
     }
 
     public HomePage googleSearch(){
-        browser.navigate().to("http://www.google.com");
+        browser.driver().navigate().to("http://www.google.com");
         return this;
     }
 }

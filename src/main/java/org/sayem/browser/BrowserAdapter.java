@@ -1,11 +1,13 @@
 package org.sayem.browser;
 
-import com.smartbear.testleft.Driver;
+/**
+ * Created by sayem on 08/02/17.
+ */
+public class BrowserAdapter<T> implements Browser<T> {
 
-public class TestLeftAdapter<T extends Driver> implements Browser<T> {
     private T driver;
 
-    public TestLeftAdapter(T driver) {
+    BrowserAdapter(T driver) {
         this.driver = driver;
     }
 
