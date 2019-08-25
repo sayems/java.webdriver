@@ -9,25 +9,27 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import static com.smartbear.testleft.BrowserType.Chrome;
+
 public class ChromeBrowser implements Adapter {
 
     @Override
     public Browser<WebPage> webPage(String url) throws TestAgentRunException, RestConnectionRefused, HttpException, ApiException {
         WebBrowser browser = new LocalDriver()
                 .getApplications()
-                .runBrowser(BrowserType.Chrome,
+                .runBrowser(Chrome,
                         url);
         WebPage page = browser.find(WebBrowser.class, new WebBrowserPattern() {{
-            ObjectIdentifier = BrowserType.Chrome.getValueString().toLowerCase();
+            ObjectIdentifier = Chrome.getValueString().toLowerCase();
         }}).find(WebPage.class, new WebPagePattern() {{
             URL = url;
         }});
-        return new BrowserAdapter<>(page);
+        return new TestLeftAdapter(page);
     }
 
     @Override
     public Browser<WebDriver> webDriver() {
         WebDriverManager.chromedriver().setup();
-        return new BrowserAdapter<>(new ChromeDriver());
+        return new WebDriverAdapter(new ChromeDriver());
     }
 }
