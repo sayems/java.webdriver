@@ -17,8 +17,7 @@ public class ChromeBrowser implements WebAdapter<WebPage, WebDriver> {
     public Browser<WebPage> webPage(String url) throws TestAgentRunException, RestConnectionRefused, HttpException, ApiException {
         WebBrowser browser = new LocalDriver()
                 .getApplications()
-                .runBrowser(Chrome,
-                        url);
+                .runBrowser(Chrome, url);
         WebPage page = browser.find(WebBrowser.class, new WebBrowserPattern() {{
             ObjectIdentifier = Chrome.getValueString().toLowerCase();
         }}).find(WebPage.class, new WebPagePattern() {{

@@ -7,5 +7,5 @@ import com.smartbear.testleft.TestAgentRunException;
 import com.smartbear.testleft.testobjects.TestObject;
 
 public interface Adapter<T extends TestObject> {
-    Browser<T> webPage(String var) throws TestAgentRunException, RestConnectionRefused, HttpException, ApiException;
+    Browser<T> webPage(String app) throws TestAgentRunException, RestConnectionRefused, HttpException, ApiException;
 }
