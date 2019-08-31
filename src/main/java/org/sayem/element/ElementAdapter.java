@@ -10,12 +10,12 @@ import java.util.List;
 /**
  * Created by sayem on 08/02/17.
  */
-public class ElementAdapter<T extends WebDriver> implements Element {
+public class ElementAdapter implements Element {
 
-    private T driver;
+    private WebDriver driver;
 
-    public ElementAdapter(BrowserAdapter<T> driver) {
-        this.driver = driver.driver();
+    public ElementAdapter(WebDriver driver) {
+        this.driver = driver;
     }
 
     @Override

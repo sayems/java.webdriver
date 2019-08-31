@@ -14,20 +14,20 @@ import java.util.function.Supplier;
 /**
  * Created by sayem on 08/02/17.
  */
-public class BrowserAdapter<T extends WebDriver> implements Browser<T> {
+public class BrowserAdapter implements Browser<WebDriver> {
 
-    private T driver;
-    private ElementAdapter<T> element;
+    private WebDriver driver;
+    private ElementAdapter element;
     private DateTimePickerAdapter dateTime;
 
-    public BrowserAdapter(T driver) {
+    BrowserAdapter(WebDriver driver) {
         this.driver = driver;
-        this.element = new ElementAdapter<>(this);
+        this.element = new ElementAdapter(driver);
         this.dateTime = new DateTimePickerAdapter();
     }
 
     @Override
-    public T driver() {
+    public WebDriver driver() {
         return driver;
     }
 

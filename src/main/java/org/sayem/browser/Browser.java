@@ -12,6 +12,7 @@ import java.util.function.Supplier;
 /**
  * Created by sayem on 08/02/17.
  */
+
 public interface Browser<T extends WebDriver> {
 
     T driver();

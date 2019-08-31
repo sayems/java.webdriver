@@ -1,12 +1,13 @@
 package org.sayem.pages;
 
+import org.openqa.selenium.WebDriver;
 import org.sayem.browser.Browser;
 
 public class HomePage {
 
-    private Browser browser;
+    private Browser<WebDriver> browser;
 
-    public HomePage(Browser browser) {
+    public HomePage(Browser<WebDriver> browser) {
         this.browser = browser;
     }
 
