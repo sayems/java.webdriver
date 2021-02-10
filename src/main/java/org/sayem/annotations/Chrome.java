@@ -12,5 +12,5 @@ import static org.sayem.config.Repository.CHROME;
 @Retention(RUNTIME)
 @Target({METHOD})
 public @interface Chrome {
-    Repository browser() default CHROME;
+    Repository browser() default CHROME;//code updated from git client
 }

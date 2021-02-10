@@ -12,5 +12,5 @@ import static org.sayem.config.Repository.FIREFOX;
 @Retention(RUNTIME)
 @Target({METHOD})
 public @interface Firefox {
-    Repository browser() default FIREFOX;
+    Repository browser() default FIREFOX;//code updated
 }
